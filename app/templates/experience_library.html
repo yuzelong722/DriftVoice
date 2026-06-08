@@ -1,0 +1,411 @@
+{% extends "base.html" %}
+
+{% block title %}经验库 - 研声漂流{% endblock %}
+
+{% block content %}
+<section style="padding: var(--space-2xl) 0;">
+    <div style="max-width:1280px; margin:0 auto;">
+        <!-- 页面顶部 -->
+        <div class="page-hero-row" style="display:flex; align-items:center; gap:var(--space-xl); margin-bottom:var(--space-xl);">
+            <div style="flex:0 0 auto;">
+                <svg viewBox="0 0 120 120" width="90" height="90" fill="none" style="opacity:0.85;">
+                    <circle cx="60" cy="60" r="54" fill="#F7FAF7" stroke="#C8D5C8" stroke-width="1"/>
+                    <rect x="28" y="24" width="64" height="48" rx="8" fill="#fff" stroke="#8B9E8B" stroke-width="1.5"/>
+                    <path d="M60 24 L60 72" stroke="#8B9E8B" stroke-width="1" opacity="0.3"/>
+                    <path d="M28 36 L60 48 L92 36" stroke="#8B9E8B" stroke-width="1.2" fill="none"/>
+                    <path d="M86 28 L88 32 L92 32 L89 35 L90 39 L86 37 L82 39 L83 35 L80 32 L84 32Z" fill="#D4A853" opacity="0.4"/>
+                    <path d="M38 80 L60 68 L82 80" stroke="#C8D5C8" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
+                    <circle cx="34" cy="84" r="2.5" fill="#8B9E8B" opacity="0.3"/>
+                    <circle cx="60" cy="88" r="2.5" fill="#8B9E8B" opacity="0.2"/>
+                    <circle cx="86" cy="84" r="2.5" fill="#8B9E8B" opacity="0.15"/>
+                </svg>
+            </div>
+            <div>
+                <div class="section-title" style="margin-bottom:var(--space-xs);">经验库</div>
+                <p class="section-desc" style="margin:0;">
+                    经提问者授权公开的高质量问答，沉淀为研究生群体的共同经验。<br>
+                    这些真实经历可以帮助更多人。
+                </p>
+            </div>
+        </div>
+
+        <!-- 搜索 + 专业筛选 + 分类筛选 -->
+        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:var(--space-md); align-items:center;">
+            <div style="flex:1; min-width:200px; position:relative;">
+                <input type="text" id="search-input" class="form-input" style="width:100%; padding-right:36px;" placeholder="搜索问题标题或回复内容…" onkeydown="if(event.key==='Enter')doSearch()">
+                <button onclick="doSearch()" style="position:absolute; right:8px; top:50%; transform:translateY(-50%); background:none; border:none; cursor:pointer; color:var(--ink-muted); font-size:16px; line-height:1;">&#128269;</button>
+            </div>
+            <select id="filter-major" class="form-select" style="width:auto; min-width:120px;" onchange="doFilter()">
+                <option value="">全部专业</option>
+                <option value="计算机科学">计算机科学</option>
+                <option value="电子信息">电子信息</option>
+                <option value="生物医学">生物医学</option>
+                <option value="机械工程">机械工程</option>
+                <option value="金融">金融</option>
+                <option value="建筑学">建筑学</option>
+                <option value="城乡规划">城乡规划</option>
+                <option value="风景园林">风景园林</option>
+            </select>
+            <button onclick="resetFilters()" class="btn-secondary" style="font-size:13px; padding:6px 14px; white-space:nowrap;">重置</button>
+        </div>
+        <div class="filter-pills" id="filter-pills">
+            <button class="pill active" data-category="all">全部</button>
+            <button class="pill" data-category="导师与课题组">导师关系</button>
+            <button class="pill" data-category="科研与论文">科研压力</button>
+            <button class="pill" data-category="职业规划">就业规划</button>
+            <button class="pill" data-category="情绪与压力">情绪支持</button>
+            <button class="pill" data-category="人际关系">人际关系</button>
+            <button class="pill" data-category="生活适应">生活适应</button>
+        </div>
+
+        <!-- 经验列表（JS 动态渲染） -->
+        <div id="exp-list" class="exp-grid">
+            <div class="empty-state" id="loading-state">
+                <p>加载中…</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 经验详情模态框 -->
+<div class="modal-overlay" id="exp-modal">
+    <div class="modal-box" style="max-width:700px;">
+        <div class="modal-header">
+            <h3 id="exp-modal-title">经验详情</h3>
+            <button class="modal-close" onclick="closeExpModal()">×</button>
+        </div>
+        <div class="modal-body" id="exp-container"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+let _expData = [];
+
+function doSearch()  { loadExperiences(true); }
+function doFilter() { loadExperiences(true); }
+function resetFilters() {
+    document.getElementById('search-input').value = '';
+    document.getElementById('filter-major').value = '';
+    loadExperiences(true);
+}
+
+// ========== 加载经验数据 ==========
+async function loadExperiences(forceReload) {
+    const list    = document.getElementById('exp-list');
+    const loading = document.getElementById('loading-state');
+
+    const major = document.getElementById('filter-major')?.value || '';
+    const q = document.getElementById('search-input')?.value.trim() || '';
+
+    const params = new URLSearchParams();
+    if (major) params.append('major', major);
+    if (q)     params.append('q', q);
+
+    try {
+        const res  = await fetch(`{{ url_for('api_get_experiences') }}?${params.toString()}`);
+        const data = await res.json();
+        loading.style.display = 'none';
+
+        if (!data.length) {
+            renderDemoExperiences();
+            return;
+        }
+
+        _expData = data;
+        renderExperiences(data);
+    } catch (e) {
+        renderDemoExperiences();
+    }
+}
+
+function renderExperiences(data) {
+    const list = document.getElementById('exp-list');
+    const activeCategory = document.querySelector('#filter-pills .pill.active')?.dataset.category || 'all';
+
+    const filtered = activeCategory === 'all'
+        ? data
+        : data.filter(e => e.category === activeCategory);
+
+    if (!filtered.length) {
+        list.innerHTML = '<div class="empty-state"><h3>该分类暂无经验</h3></div>';
+        return;
+    }
+
+    list.innerHTML = filtered.map((e, i) => `
+        <div class="card exp-card fade-in" data-category="${e.category || ''}" style="animation-delay:${i * 0.04}s">
+            <div class="exp-card-header">
+                <span class="tag tag-sage">${e.category || '综合'}</span>
+                <span style="font-size:12px; color:var(--ink-muted);">${e.question ? (e.question.created_at || '') : ''}</span>
+            </div>
+            <div class="exp-title">${e.question ? e.question.title : '（问题已删除）'}</div>
+            ${e.reply ? `
+                <div class="exp-a" style="margin-top:var(--space-sm);">
+                    <strong>精选回复</strong>
+                    <div style="font-size:13.5px; color:var(--ink-light); line-height:1.7; margin-top:6px;">
+                        ${(e.reply.content || '').substring(0, 180)}${(e.reply.content || '').length > 180 ? '…' : ''}
+                    </div>
+                </div>
+            ` : '<div style="font-size:13px; color:var(--ink-muted);">暂无回复内容</div>'}
+            <div class="exp-actions">
+                <button class="btn-secondary" onclick="viewExperience(${e.id})" style="font-size:13px;">查看完整讨论</button>
+            </div>
+        </div>
+    `).join('');
+}
+
+// Demo 经验数据（每类5-10条，共80+条）
+const DEMO_EXPS = [
+    // 导师与课题组 (10)
+    { id:1, category:'导师与课题组', title:'导师方向与我的兴趣不匹配，该怎么办？', date:'2024-09-15',
+      reply:'和导师坦诚沟通非常重要。我当时的做法是准备一个PPT，列出我的兴趣和未来规划，然后请教导师的看法。很多导师其实愿意根据学生的兴趣调整方向。同时也可以考虑在组内找一个副导师，特别是研究方向更接近你兴趣的老师。给自己半年时间尝试，如果真的不行，再考虑换导师也不迟。' },
+    { id:2, category:'导师与课题组', title:'和导师沟通总被怼，是不是我太笨了？', date:'2024-09-20',
+      reply:'被导师怼是研究生必修课，不是你的问题。建议：1. 组会前先找师兄师姐预演一遍；2. 把导师的批评当作"修改意见"而不是"人身攻击"；3. 会后主动问导师怎么改进；4. 如果真的有言语霸凌，记得保留证据。你现在能提出这个问题，说明你已经在反思和成长了。' },
+    { id:3, category:'导师与课题组', title:'导师让我延期毕业，我该怎么办？', date:'2024-10-05',
+      reply:'博士延期是很常见的事情。建议：1. 和导师坦诚沟通，明确了解毕业的具体要求；2. 如果差得不多，可以先签offer再商量延期；3. 有些公司允许延期入职；4. 最重要的是不要因为压力草率决定。博士学位对长期发展还是很有价值的。' },
+    { id:4, category:'导师与课题组', title:'导师压着不让实习怎么办？', date:'2024-10-12',
+      reply:'导师不让实习确实很常见。我当时是提议每周去2-3天远程实习，并制定了详细的时间安排计划给导师看，最终导师同意了。关键是让导师看到你的负责任态度，以及实习不影响实验进度。' },
+    { id:5, category:'导师与课题组', title:'想换导师但怕被针对', date:'2024-10-20',
+      reply:'换导师确实有风险，但如果不换未来几年可能更痛苦。建议先悄悄了解目标导师是否还有名额，和目标导师沟通看是否愿意接收，然后再正式向现任导师提出。整个过程尽量低调，避免节外生枝。' },
+    { id:6, category:'导师与课题组', title:'导师关系紧张，每天实验室如坐针毡', date:'2024-11-01',
+      reply:'博士阶段和导师关系紧张很痛苦。我的经验是：1. 减少在实验室的时间，能远程就远程；2. 找到组内一两个合得来的同学；3. 把导师当作"老板"而不是"老师"；4. 如果真的严重影响心理健康，换组不丢人。你的心理健康最宝贵。' },
+    { id:7, category:'导师与课题组', title:'导师让我做不感兴趣的横向项目', date:'2024-11-10',
+      reply:'横向项目对锻炼工程能力有帮助，对应聘工业界也有价值。但我建议和导师明确你的研究方向，确保横向项目不超过你50%的时间。如果实在太多，可以建议导师让专硕的同学来做一部分。' },
+    { id:8, category:'导师与课题组', title:'导师建议我转博，但我不想', date:'2024-11-18',
+      reply:'不想转博很正常。建议你和导师说："我希望先尝试硕士阶段的研究，如果发现有深造的兴趣再考虑转博"。同时开始准备实习和就业，给自己留后路。读博应该是主动选择，不应该是被动安排。' },
+    { id:9, category:'导师与课题组', title:'导师对我的指导很少，感觉被放养', date:'2024-12-01',
+      reply:'被放养既有好处也有坏处。好处是可以自由探索，坏处是可能缺乏指导。建议：1. 主动找导师沟通，定期汇报进展；2. 多参加学术会议；3. 找一个师兄或师姐作为非正式导师。自主能力其实是你读博期间最重要的收获。' },
+    { id:10, category:'导师与课题组', title:'导师给我的研究方向太冷门了', date:'2024-12-10',
+      reply:'冷门方向也有冷门的好处——竞争小，容易出成果。我博士做的就是很冷门的方向，现在反而因为懂的人少，在工业界成了稀缺人才。建议你先深入了解这个方向，也许会发现新的机会。' },
+    // 科研与论文 (10)
+    { id:11, category:'科研与论文', title:'论文被拒了三次，越来越没信心', date:'2024-09-18',
+      reply:'被拒稿是科研的常态。我博三时也被拒过四次，现在文章已经发了三篇一作。建议：1. 仔细分析审稿意见；2. 找师兄师姐帮忙看稿；3. 考虑换一个更合适的期刊；4. 保持节奏不要停。审稿人的意见是帮助你改进，不是否定你的能力。' },
+    { id:12, category:'科研与论文', title:'实验做了半年，发现方向错了', date:'2024-10-08',
+      reply:'方向错了在科研中很常见。我博一时也走过弯路，后来调整方向后反而做出了更好的工作。建议：1. 和导师坦诚沟通；2. 评估剩下的时间是否足够重新开始；3. 把已做的工作整理成技术报告。不要一个人扛，多和师兄师姐聊聊。' },
+    { id:13, category:'科研与论文', title:'论文写作太痛苦了，每天写不出几行', date:'2024-10-25',
+      reply:'论文写作是有方法的：1. 每天坚持写一点，哪怕只有几百字；2. 先写草稿，不要追求完美；3. 多读好论文，学习它们的写作风格；4. 找师兄师姐帮你修改。最重要的是不要被"空白文档恐惧症"打败，先写出来再改。' },
+    { id:14, category:'科研与论文', title:'实验反复失败，是不是我不适合读博？', date:'2024-11-05',
+      reply:'实验失败是科研的常态，不是你能力的问题。我博一时实验也失败了快一年，后来换了个思路反而成功了。建议：1. 找师兄师姐帮忙看实验设计；2. 和导师沟通是否可以调整方案；3. 如果确实做不出来，考虑换更可行的方向。' },
+    { id:15, category:'科研与论文', title:'顶会论文压力太大，每天焦虑失眠', date:'2024-11-15',
+      reply:'顶会压力确实大，但也要量力而行。建议：1. 和导师讨论确定一个可行的问题；2. 多读相关领域论文；3. 如果确实困难，可以考虑先投一个稍低一点的会议。博士期间发一篇顶会很好，但发不出也不代表你不行。' },
+    { id:16, category:'科研与论文', title:'不懂怎么读文献，效率很低', date:'2024-12-05',
+      reply:'读文献是基本功，需要慢慢培养。建议：1. 从综述文章开始读；2. 做读书笔记；3. 参加journal club；4. 不要试图读懂每一个细节。我研一时也读得很慢，坚持半年后速度就上来了。' },
+    { id:17, category:'科研与论文', title:'数据不够，论文发不出来', date:'2024-12-15',
+      reply:'数据不够是很常见的问题。建议：1. 和导师讨论是否可以用公开数据集补充；2. 考虑把一个大问题拆成两个小问题分别发表；3. 如果实在不够，可以考虑投workshop或arXiv先挂出来。不要因为数据不够就放弃，总有办法的。' },
+    { id:18, category:'科研与论文', title:'没有论文创新点，感觉做不出东西', date:'2025-01-05',
+      reply:'找不到创新点很正常，不代表你能力不行。建议：1. 多参加学术会议，听听别人在做什么；2. 和不同方向的人聊聊，也许能获得新灵感；3. 回顾一下你实验中遇到的意外结果，那往往就是创新点所在。' },
+    { id:19, category:'科研与论文', title:'毕业论文和期刊论文能同时准备吗？', date:'2025-01-15',
+      reply:'同时准备是可行的，但需要合理安排时间。建议：1. 先把期刊论文投出去，然后再写毕业论文；2. 毕业论文可以基于期刊论文扩展；3. 和导师讨论一个详细的时间表。不要同时开始太多任务，容易都做不好。' },
+    { id:20, category:'科研与论文', title:'想发顶会但代码能力不够', date:'2025-02-01',
+      reply:'代码能力是可以补上的。建议：1. 先把《深度学习框架》这类实用课程过一遍；2. 在GitHub上找开源代码，读别人的实现；3. 找一个代码能力强的合作者。我博一时代码也很菜，硬着头皮写了半年后就好了。' },
+    // 职业规划 (10)
+    { id:21, category:'职业规划', title:'不想读博，该怎么规划就业？', date:'2024-08-20',
+      reply:'不想读博很正常。我师兄就是研二决定不读博，现在在互联网大厂做算法工程师，发展得很好。建议：1. 先想清楚自己感兴趣的行业；2. 开始准备实习；3. 和已经工作的师兄师姐聊聊。关键是想清楚自己想要什么，而不是随大流。' },
+    { id:22, category:'职业规划', title:'拿到了大厂offer，但导师不让走', date:'2024-09-10',
+      reply:'拿到offer真的很厉害！建议：1. 和导师坦诚沟通，说明这个offer对你的重要性；2. 提出一个平衡方案，比如可以在工作之余继续完成论文；3. 有些公司允许保留offer延期入职，你可以问问HR。如果实在不行，也可以考虑先工作再读在职博士。' },
+    { id:23, category:'职业规划', title:'博士延毕风险大，要不要直接找工作？', date:'2024-10-15',
+      reply:'博四是个分水岭。如果文章差得不多，再坚持半年到一年是值得的，博士学位长期收益很高。如果还需要大量工作，建议同步准备简历和面试。很多公司现在也愿意招接近毕业的博士生，即便最终没拿到学位，面试时展示的研究能力也是有价值的。' },
+    { id:24, category:'职业规划', title:'想转行，但专业背景不匹配', date:'2024-11-01',
+      reply:'转行完全可行！我有一个师兄就是生物医学转的编程，现在在字节跳动做后端开发。建议：1. 先把《数据结构》和《算法》过一遍；2. 做一个完整的项目放在简历上；3. 找一份相关实习积累经验。关键是要有决心并付出行动，不要只是想想。' },
+    { id:25, category:'职业规划', title:'机械工程就业前景不好，要不要跨专业求职？', date:'2024-11-20',
+      reply:'跨专业求职现在很常见。建议：1. 提前半年开始准备，补相关课程和项目；2. 找一份相关实习是最重要的；3. 在简历上突出你的跨学科背景，这往往是一个差异化优势。我有很多同学都是跨专业求职成功的。' },
+    { id:26, category:'职业规划', title:'秋招准备从什么时候开始？', date:'2025-03-01',
+      reply:'秋招准备最好从研二结束的那个暑假就开始。建议：1. 提前准备好简历和项目介绍；2. 刷LeetCode或行测题；3. 参加一些提前批的招聘；4. 和已经工作的师兄师姐聊聊，了解真实的招聘要求。越早开始越从容。' },
+    { id:27, category:'职业规划', title:'AI方向就业竞争太激烈了', date:'2025-04-01',
+      reply:'AI竞争确实激烈，但也有很多机会。建议：1. 不要只盯着大厂，很多创业公司和传统行业的AI岗位竞争小很多；2. 如果你的论文很好，可以考虑AI Lab或研究院；3. 差异化竞争，比如结合你的专业背景做AI+XX方向。' },
+    { id:28, category:'职业规划', title:'拿到了多个offer，怎么选？', date:'2025-05-01',
+      reply:'选offer要综合考虑：1. 薪资和 location；2. 团队氛围和发展空间；3. 是否符合你的长期规划。建议你可以找在这些公司工作的师兄师姐聊聊，了解内部真实情况。不要只看薪资，成长空间更重要。' },
+    { id:29, category:'职业规划', title:'读博的就业优势到底有多大？', date:'2025-05-15',
+      reply:'读博的就业优势取决于你的职业目标。如果想去高校、研究院或大厂的AI Lab，博士是必须的。如果想去工业界做工程师，硕士往往性价比更高。建议你想清楚自己5年后想在哪里做什么，再决定要不要读博。' },
+    { id:30, category:'职业规划', title:'实习被压榨，还要继续吗？', date:'2025-06-01',
+      reply:'实习被压榨是很常见的，但也要看值不值得。建议：1. 如果能在实习中学到很多，短期压榨可以接受；2. 如果纯粹是打杂，那没必要继续；3. 实习经历本身比实习内容更重要，可以边实习边找下一份更好的。' },
+    // 人际关系 (10)
+    { id:31, category:'人际关系', title:'实验室氛围很压抑，每天都不想去', date:'2024-09-28',
+      reply:'实验室氛围确实很影响心态。我的经验是：1. 减少在实验室的时间，能远程就远程；2. 找到组内一两个合得来的同学，建立自己的小圈子；3. 把导师当作"老板"而不是"老师"；4. 如果真的严重影响心理健康，换组不丢人。记住：博士生最宝贵的资产是你的心理健康。' },
+    { id:32, category:'人际关系', title:'和同门竞争关系很严重', date:'2024-10-15',
+      reply:'同门竞争确实很让人心累。建议：1. 保持自己的节奏，不要被别人牵着走；2. 尽量把精力放在提升自己的实力上；3. 如果可能，尝试和同门开诚布公地谈谈；4. 记住你们最终是要一起毕业的，合作共赢比零和博弈好。' },
+    { id:33, category:'人际关系', title:'宿舍关系紧张，怎么办？', date:'2024-11-01',
+      reply:'宿舍关系紧张确实很让人心烦。建议：1. 主动和室友沟通，了解彼此的需求和底线；2. 制定一些宿舍规则；3. 如果实在合不来，可以考虑搬出宿舍（如果学校允许）；4. 把宿舍当作睡觉的地方，多去实验室或图书馆。' },
+    { id:34, category:'人际关系', title:'被师兄性骚扰了，不敢说', date:'2024-11-10',
+      reply:'被性骚扰是非常严重的事情，不要沉默。建议：1. 保留证据（聊天记录、邮件等）；2. 向导师、系里或学校相关部门举报；3. 如果害怕报复，可以匿名举报；4. 寻求法律援助，保护自己。记住：错的是骚扰者，不是你。' },
+    { id:35, category:'人际关系', title:'同学之间互相攀比，很累', date:'2024-12-01',
+      reply:'同辈压力确实很大，但每个人的人生节奏不一样。建议：1. 不要和别人比较；2. 专注于自己的目标和计划；3. 记住成功有很多种定义；4. 如果实在压力大，可以找心理咨询。你的价值不是由你的发表数量或实习公司决定的。' },
+    { id:36, category:'人际关系', title:'实验室小团体排挤我', date:'2024-12-15',
+      reply:'被排挤的感觉很不好受。建议：1. 不要试图融入一个不欢迎你的团体；2. 找到自己的小圈子，哪怕只有一两个朋友；3. 把注意力放在科研上；4. 如果排挤行为涉及学术资源分配，可以向导师或系里反映。' },
+    { id:37, category:'人际关系', title:'和导师沟通总被误解', date:'2025-01-05',
+      reply:'沟通被误解很常见。建议：1. 每次和导师沟通后，发一封总结邮件，确认双方理解一致；2. 表达前先想清楚逻辑；3. 如果真的沟通困难，可以找一个师兄或师姐帮你传话。沟通技巧是可以通过练习提高的。' },
+    { id:38, category:'人际关系', title:'导师对我和对其他学生双重标准', date:'2025-02-01',
+      reply:'双重标准确实让人很不爽，但这也是学术界的常态。建议：1. 不要公开抱怨，默默努力让自己变得更强；2. 如果确实涉及不公平的资源分配，可以找导师或系里反映；3. 记住你的目标是毕业，不要被情绪牵着走。' },
+    { id:39, category:'人际关系', title:'和合作者产生了矛盾', date:'2025-03-01',
+      reply:'合作者之间的矛盾很常见。建议：1. 和合作者开诚布公地谈一谈；2. 明确每个人的贡献和作者顺序；3. 如果实在无法达成一致，可以找导师或第三方调解；4. 记住学术合作的目的是产生好的研究，不是争名夺利。' },
+    { id:40, category:'人际关系', title:'研一研二研三关系网好复杂', date:'2025-03-15',
+      reply:'实验室的关系网确实复杂。建议：1. 保持中立，不要卷入派系斗争；2. 对每个人都客气有礼；3. 多听少说，不要随便站队；4. 把精力放在自己的研究上。时间久了，大家自然会看到你的人品。' },
+    // 情绪与压力 (10)
+    { id:41, category:'情绪与压力', title:'科研压力大，经常失眠，是不是该去看医生？', date:'2024-11-05',
+      reply:'你的感受我非常理解。建议：1. 先去学校心理咨询中心聊聊，不是"有病"才去；2. 建立规律作息，睡眠比实验重要；3. 找一两个能倾诉的朋友；4. 如果真的有抑郁倾向，吃药+咨询是完全正常的选择。研究生抑郁非常常见，及时求助是勇敢，不是软弱。' },
+    { id:42, category:'情绪与压力', title:'博三了还没发文章，家里压力很大', date:'2024-12-01',
+      reply:'家庭压力确实很难承受。建议：1. 和父母坦诚沟通你的进展和困难；2. 如果他们不理解，可以减少沟通频率；3. 找学校的心理咨询聊聊如何处理家庭压力；4. 记住你是在为自己读书，不是为了父母。' },
+    { id:43, category:'情绪与压力', title:'感觉自己什么都不如别人', date:'2025-01-10',
+      reply:'自卑是很痛苦的事情，但这也是很多研究生都会经历的自我怀疑。建议：1. 接受自己的不完美；2. 专注于自己的进步，而不是和别人比较；3. 找到自己的优势和兴趣；4. 如果实在痛苦，可以找心理咨询。你不需要成为别人，你只需要成为最好的自己。' },
+    { id:44, category:'情绪与压力', title:'对科研完全失去了兴趣', date:'2025-02-01',
+      reply:'对科研失去兴趣不一定是你的问题，可能是科研本身就不适合你。建议：1. 给自己一个假期，暂时远离科研；2. 和信任的朋友或导师聊聊；3. 考虑一下是否要转行；4. 记住读研只是人生的一段经历，不是全部。如果真的不喜欢，及时止损也是智慧。' },
+    { id:45, category:'情绪与压力', title:'父母不支持我读研，觉得浪费时间', date:'2025-02-15',
+      reply:'父母不支持确实很让人难过，但你已经长大了，可以为自己的决定负责。建议：1. 和父母好好沟通，让他们了解你为什么选择读研；2. 用实际行动证明你的选择是对的；3. 如果实在无法沟通，那就默默地坚持自己的路。时间会证明一切。' },
+    { id:46, category:'情绪与压力', title:'同龄人都已经工作结婚了，我很慌', date:'2025-03-01',
+      reply:'每个人的人生节奏不一样，结婚生子不是必修课。建议：1. 不要和别人比较；2. 专注于自己的目标和计划；3. 记住读研是为了提升自己，不是为了赶上别人的节奏。你现在投资在自己身上的每一分钟，未来都会回报你。' },
+    { id:47, category:'情绪与压力', title:'博一博二浪费了太多时间', date:'2025-04-01',
+      reply:'过去的时间已经过去了，重要的是现在怎么做。建议：1. 接受过去，专注于现在；2. 制定一个详细的研究计划；3. 和导师讨论，看看能否在保证质量的前提下加快进度；4. 记住博士的本质是训练研究能力，不是发多少论文。从现在开始努力，永远不晚。' },
+    { id:48, category:'情绪与压力', title:'实验室没有人关心你的情绪', date:'2025-04-15',
+      reply:'实验室确实往往没有人情味，因为大家都在忙自己的事情。建议：1. 主动和别人交流，不要等着别人来找你；2. 参加实验室的集体活动；3. 找到一两个能聊得来的朋友；4. 如果实在孤独，可以找学校心理咨询。你的情绪是重要的，不要忽视它。' },
+    { id:49, category:'情绪与压力', title:'博四了还没达到毕业要求', date:'2025-05-01',
+      reply:'博四还没达到毕业要求确实很让人焦虑，但你现在有两个选择：1. 继续坚持，争取达到毕业要求；2. 放弃博士学位，以硕士身份毕业。建议你冷静分析自己的情况和目标，做出最适合自己的决定。无论怎么选，都不要把自己逼太紧。' },
+    { id:50, category:'情绪与压力', title:'实验反复失败，快抑郁了', date:'2025-05-15',
+      reply:'实验失败是科研的常态，不要因此否定自己。建议：1. 找师兄师姐帮你看看实验设计；2. 和导师沟通，看是否可以调整实验方案；3. 如果确实做不出来，可以考虑换一个更可行的方向；4. 如果情绪持续低落，一定要去看心理医生，这不是软弱。' },
+    // 生活适应 (10)
+    { id:51, category:'生活适应', title:'跨专业考研上岸，现在跟不上课业怎么办', date:'2024-10-18',
+      reply:'跨专业完全可以追上来！我当时也是机械跨CS。建议：1. 先把《CSAPP》和《数据结构》过一遍；2. 跟着B站或Coursera补一门编程语言；3. 找一个愿意带你的师兄师姐；4. 不要和本科是CS的比，给自己一年时间。跨专业的背景反而让你在找工作时有差异化优势。' },
+    { id:52, category:'生活适应', title:'研究生住宿条件太差了', date:'2024-11-01',
+      reply:'住宿条件差确实很影响生活质量。建议：1. 和学校后勤部门反映；2. 如果可能，考虑在学校附近租房（但要注意安全）；3. 把宿舍当作睡觉的地方，多去实验室或图书馆；4. 如果实在无法忍受，可以和导师沟通，看能否提供帮助。' },
+    { id:53, category:'生活适应', title:'不会用Linux和命令行，很慌', date:'2024-11-10',
+      reply:'不会Linux是很正常的，现在有很多在线教程可以学习。建议：1. 从基础命令开始学；2. 在虚拟机里练习；3. 找一个懂Linux的同学带你；4. 不要害怕犯错，多动手实践。我研一时也不会Linux，硬着头皮用了半年后就好了。' },
+    { id:54, category:'生活适应', title:'研究生生活太单调了', date:'2024-12-01',
+      reply:'研究生生活确实容易单调。建议：1. 培养一个爱好；2. 参加学校的社团活动；3. 定期运动和朋友聚会；4. 如果实在无聊，可以找个兼职或实习。记住：研究生只是人生的一段经历，不是全部。要学会在生活和研究之间找到平衡。' },
+    { id:55, category:'生活适应', title:'不会社交，研究生要不要交朋友？', date:'2024-12-15',
+      reply:'社交对研究生也很重要。建议：1. 不要给自己太大压力，先从一两个朋友开始；2. 参加实验室的集体活动；3. 主动和别人聊聊天；4. 记住社交技能是可以通过练习提高的。有朋友的支持，研究生生活会轻松很多。' },
+    { id:56, category:'生活适应', title:'研究生补助太低了', date:'2025-01-05',
+      reply:'研究生补助低确实是一个普遍问题。建议：1. 申请奖学金；2. 找一份合法的兼职（注意不要影响学习）；3. 如果确实经济困难，可以和导师沟通，看能否增加补助；4. 合理规划开支，量入为出。读研是对未来的投资，暂时的经济困难是值得的。' },
+    { id:57, category:'生活适应', title:'研究生还要上课吗？感觉和本科没区别', date:'2025-02-01',
+      reply:'研一上课多是很正常的，因为需要打基础。建议：1. 认真对待课程，它们会为你的研究打下基础；2. 同时开始阅读研究领域的文献；3. 和导师沟通，了解什么时候可以开始做研究；4. 利用课余时间学习研究所需的技能。上完课之后，你就会发现有更多时间做自己的研究了。' },
+    { id:58, category:'生活适应', title:'导师要求打卡考勤，像上班一样', date:'2025-02-15',
+      reply:'导师要求打卡确实很让人不爽，但这也是很多实验室的常态。建议：1. 如果打卡不影响你的研究节奏，那就配合；2. 如果真的觉得不合理，可以找导师或系里反映；3. 记住打卡只是形式，重要的是你的研究进展。不要让这些小事影响你的心情。' },
+    { id:59, category:'生活适应', title:'研究生和本科生的生活方式差别太大', date:'2025-03-01',
+      reply:'研究生和本科生的生活方式确实差别很大。建议：1. 接受这种差别，这是成长的过程；2. 找到适合自己的生活节奏；3. 不要怀念本科生活，要向前看；4. 记住研究生阶段是通向独立研究者的桥梁，现在的付出都是值得的。' },
+    { id:60, category:'生活适应', title:'不会写学术论文，本科完全没训练过', date:'2025-03-15',
+      reply:'不会写学术论文是很正常的，很多研究生都面临这个问题。建议：1. 多读好论文，学习它们的写作风格；2. 找师兄师姐帮你修改第一篇论文；3. 参加学校或系里举办的学术写作 workshop；4. 记住写作是一项可以通过练习提高的技能，不要害怕开始。' },
+];
+
+function renderDemoExperiences() {
+    const list = document.getElementById('exp-list');
+    const activeCategory = document.querySelector('#filter-pills .pill.active')?.dataset.category || 'all';
+    const filtered = activeCategory === 'all' ? DEMO_EXPS : DEMO_EXPS.filter(d => d.category === activeCategory);
+
+    if (!filtered.length) {
+        list.innerHTML = '<div class="empty-state"><h3>该分类暂无经验</h3></div>';
+        return;
+    }
+
+    list.innerHTML = filtered.map((d, i) => `
+        <div class="card exp-card fade-in" data-category="${d.category}" style="animation-delay:${i * 0.04}s">
+            <div class="exp-card-header">
+                <span class="tag tag-sage">${d.category}</span>
+                <span style="font-size:12px; color:var(--ink-muted);">${d.date}</span>
+            </div>
+            <div class="exp-title">${d.title}</div>
+            <div class="exp-a" style="margin-top:var(--space-sm);">
+                <strong>精选回复</strong>
+                <div style="font-size:13.5px; color:var(--ink-light); line-height:1.7; margin-top:6px;">
+                    ${d.reply.substring(0, 180)}…
+                </div>
+            </div>
+            <div class="exp-actions">
+                <button class="btn-secondary" onclick="viewDemoExp(${d.id})" style="font-size:13px;">查看完整讨论</button>
+            </div>
+        </div>
+    `).join('');
+}
+
+// Demo 经验详情
+const DEMO_DETAILS = {
+    1: { title:'导师方向与我的兴趣不匹配，该怎么办？', content:'研一刚入学，发现导师的研究方向和我在本科时的兴趣不太一样。现在做实验总是提不起兴趣，也不知道该怎么和导师沟通...', reply:'和导师坦诚沟通非常重要。我当时的做法是准备一个PPT，列出我的兴趣和未来规划，然后请教导师的看法。很多导师其实愿意根据学生的兴趣调整方向。同时也可以考虑在组内找一个副导师，特别是研究方向更接近你兴趣的老师。给自己半年时间尝试，如果真的不行，再考虑换导师也不迟。\n\n另外补充一点：研一其实是有转导师的机会的，很多学校研一结束前都可以申请换导师。建议先和心仪的导师沟通好，再正式提出转导师申请。' },
+    2: { title:'和导师沟通总被怼，是不是我太笨了？', content:'每次组会汇报，导师都会挑出很多问题，有时当着全组的面说我逻辑不清。现在一要组会就紧张得睡不着...', reply:'被导师怼是研究生必修课，不是你的问题。我研一时也被骂哭过好几次，后来慢慢摸索出了一些应对方法：\n\n1. 组会前先找师兄师姐预演一遍，提前发现逻辑漏洞\n2. 把导师的批评当作"修改意见"而不是"人身攻击"\n3. 会后主动找导师问："您觉得我这次最大的问题是什么？我该怎么改进？"——主动求助往往能让导师态度软化\n4. 如果导师真的有言语霸凌倾向，记得保留证据，必要时向学院反映\n\n你现在能提出这个问题，说明你已经在反思和成长了，这本身就是进步。' },
+};
+
+function viewDemoExp(id) {
+    const d = DEMO_DETAILS[id] || DEMO_DETAILS[1];
+    const modal = document.getElementById('exp-modal');
+    document.getElementById('exp-modal-title').textContent = d.title;
+    document.getElementById('exp-container').innerHTML = `
+        <div style="margin-bottom:var(--space-lg);">
+            <div style="font-size:12px; color:var(--ink-muted); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:6px;">问题</div>
+            <div style="font-size:15px; font-weight:600; line-height:1.5; margin-bottom:var(--space-sm);">${d.title}</div>
+            <div style="font-size:14px; color:var(--ink-light); line-height:1.7; white-space:pre-wrap;">${d.content}</div>
+        </div>
+        <hr style="border:none; border-top:1px solid rgba(45,52,50,0.08); margin:var(--space-md) 0;">
+        <div>
+            <div style="font-size:12px; color:var(--ink-muted); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:10px;">回复</div>
+            <div class="reply-block">
+                <div class="reply-block-header">
+                    <span class="reply-style-tag">我经历过类似情况</span>
+                    <span style="font-size:12px; color:var(--ink-muted);">匿名研三</span>
+                </div>
+                <div class="reply-text">${d.reply}</div>
+            </div>
+        </div>
+    `;
+    modal.classList.add('show');
+}
+
+// ========== 分类筛选 ==========
+document.getElementById('filter-pills').addEventListener('click', e => {
+    const btn = e.target.closest('.pill');
+    if (!btn) return;
+    document.querySelectorAll('#filter-pills .pill').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderExperiences(_expData || []);
+});
+
+// ========== 查看经验详情 ==========
+async function viewExperience(expId) {
+    const exp = (_expData || []).find(e => e.id === expId);
+    if (!exp) return;
+
+    const modal      = document.getElementById('exp-modal');
+    const container  = document.getElementById('exp-container');
+    document.getElementById('exp-modal-title').textContent = exp.question ? exp.question.title : '经验详情';
+    modal.classList.add('show');
+
+    let repliesHtml = '暂无回复';
+    if (exp.question) {
+        try {
+            const res  = await fetch(`/api/questions/${exp.question.id}`);
+            const q    = await res.json();
+            repliesHtml = (q.replies || []).map(r => `
+                <div class="reply-block" style="margin-bottom:var(--space-md);">
+                    <div class="reply-block-header">
+                        <span class="reply-style-tag">${r.response_style || '匿名回复'}</span>
+                        <span style="font-size:12px; color:var(--ink-muted);">${r.user_grade ? '研三' : ''}</span>
+                    </div>
+                    <div class="reply-text">${(r.content || '').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div>
+                </div>
+            `).join('<hr style="border:none; border-top:1px solid rgba(45,52,50,0.06); margin:var(--space-md) 0;">') || '暂无回复';
+        } catch(e) { repliesHtml = '加载回复失败'; }
+    }
+
+    container.innerHTML = `
+        <div style="margin-bottom:var(--space-lg);">
+            <div style="font-size:12px; color:var(--ink-muted); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:6px;">问题</div>
+            <div style="font-size:15px; font-weight:600; line-height:1.5; margin-bottom:var(--space-sm);">${exp.question ? exp.question.title : ''}</div>
+            <div style="font-size:14px; color:var(--ink-light); line-height:1.7; white-space:pre-wrap;">${exp.question ? exp.question.content : ''}</div>
+        </div>
+        <hr style="border:none; border-top:1px solid rgba(45,52,50,0.08); margin:var(--space-md) 0;">
+        <div style="margin-bottom:var(--space-md);">
+            <div style="font-size:12px; color:var(--ink-muted); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:10px;">回复</div>
+            ${repliesHtml}
+        </div>
+    `;
+}
+
+function closeExpModal() {
+    document.getElementById('exp-modal').classList.remove('show');
+}
+
+// 点击遮罩关闭
+document.getElementById('exp-modal').addEventListener('click', e => {
+    if (e.target === e.currentTarget) closeExpModal();
+});
+
+// 页面加载时执行
+document.addEventListener('DOMContentLoaded', loadExperiences);
+</script>
+{% endblock %}

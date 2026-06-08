@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}研声漂流{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="header" id="header">
+    <div class="container">
+        <a href="{{ url_for('index') }}" style="text-decoration:none;">
+            <div class="logo">
+                <h1>研声漂流</h1>
+                <p class="subtitle">研究生匿名朋辈支持平台</p>
+            </div>
+        </a>
+        <nav class="nav" id="main-nav">
+            {# 左侧常规导航 #}
+            <a href="{{ url_for('index') }}" class="nav-link" data-path="/">首页</a>
+            <a href="{{ url_for('pending_questions') }}" class="nav-link" data-path="/questions/pending">待回应</a>
+            <a href="{{ url_for('my_messages') }}" class="nav-link" data-path="/my/messages">我的回信</a>
+            <a href="{{ url_for('experience_library') }}" class="nav-link" data-path="/experience">经验库</a>
+            {# 右侧：写问题 + 登录/注册（推到最右） #}
+            <div class="nav-right">
+                {% if current_user %}
+                <a href="{{ url_for('create_question') }}" class="nav-link nav-write-link" data-path="/questions/create">写问题</a>
+                <div class="nav-user">
+                    <a href="{{ url_for('profile') }}" class="nav-user-link">
+                        <span class="nav-avatar">
+                            {{ get_animal_svg(current_user.avatar_animal, 26) | safe if get_animal_svg else '' }}
+                        </span>
+                        <span class="nav-username">{{ get_display_name(current_user) }}</span>
+                    </a>
+                </div>
+                {% else %}
+                <a href="{{ url_for('create_question') }}" class="nav-link nav-write-link" data-path="/questions/create">写问题</a>
+                <a href="{{ url_for('login') }}" class="nav-link" data-path="/login">登录</a>
+                <a href="{{ url_for('register') }}" class="nav-link nav-register-link" data-path="/register">注册</a>
+                {% endif %}
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <div class="container">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="flash-messages">
+                    {% for message in messages %}
+                        <div class="flash-message">{{ message }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 研声漂流 — 研究生匿名朋辈支持平台</p>
+        <p class="safety-notice">安全提示：如遇紧急情况，请联系学校心理中心或拨打求助热线</p>
+    </div>
+</footer>
+
+<script>
+    // 导航栏滚动阴影
+    window.addEventListener('scroll', () => {
+        document.getElementById('header').classList.toggle('scrolled', window.scrollY > 10);
+    });
+
+    // 导航激活状态（JS 高亮当前页）
+    (function() {
+        const path = window.location.pathname;
+        document.querySelectorAll('#main-nav .nav-link').forEach(link => {
+            const p = link.getAttribute('data-path');
+            if (!p) return;
+            if (p === '/') {
+                if (path === '/') link.classList.add('active');
+            } else {
+                if (path.startsWith(p)) link.classList.add('active');
+            }
+        });
+    })();
+</script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

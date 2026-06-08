@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}登录 - 研声漂流{% endblock %}
+
+{% block content %}
+<section style="padding: var(--space-3xl) 0;">
+    <div style="max-width:420px; margin:0 auto;">
+        <div style="text-align:center; margin-bottom:var(--space-xl);">
+            <div style="font-size:48px; margin-bottom:var(--space-sm);">
+                <svg viewBox="0 0 48 48" width="48" height="48" fill="none" style="display:inline-block; vertical-align:middle;">
+                    <circle cx="24" cy="24" r="22" fill="#F0F4F0" stroke="#C8D5C8" stroke-width="1.5"/>
+                    <rect x="14" y="14" width="20" height="14" rx="4" fill="#fff" stroke="#8B9E8B" stroke-width="1.2"/>
+                    <path d="M14 20 L24 28 L34 20" stroke="#8B9E8B" stroke-width="1" fill="none"/>
+                </svg>
+            </div>
+            <div class="section-title" style="font-size:22px;">进入研声漂流</div>
+            <p class="section-desc" style="margin-top:4px;">输入你的用户ID或匿名ID以登录</p>
+        </div>
+
+        <form method="POST" action="{{ url_for('login') }}">
+            <div class="form-group">
+                <label class="form-label" for="user_id">用户ID / 匿名ID</label>
+                <input type="text" class="form-input" id="user_id" name="user_id"
+                       placeholder="例如：1 或 user_001" required
+                       style="font-size:15px; padding:12px 16px;">
+                <p class="form-hint">新用户请先<a href="{{ url_for('register') }}" style="color:var(--sage);">注册</a></p>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width:100%; padding:12px; font-size:15px; margin-top:var(--space-sm);">
+                登录
+            </button>
+        </form>
+
+        <div style="text-align:center; margin-top:var(--space-lg); padding-top:var(--space-lg); border-top:1px solid rgba(45,52,50,0.06);">
+            <p style="font-size:13px; color:var(--ink-muted); margin-bottom:8px;">还没有账号？</p>
+            <a href="{{ url_for('register') }}" class="btn-secondary" style="text-decoration:none; padding:10px 28px; font-size:13px;">
+                注册新账号
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

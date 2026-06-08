@@ -1,0 +1,263 @@
+{% extends "base.html" %}
+
+{% block title %}首页 - 研声漂流{% endblock %}
+
+{% block content %}
+<!-- Hero: 16:9 横向布局 -->
+<section class="hero fade-in">
+    <div class="hero-inner">
+        <div class="hero-text">
+            <h2>匿名表达，<br>温暖回应</h2>
+            <p class="hero-description">
+                一个专为研究生设计的匿名朋辈支持平台。<br>
+                安全地表达你的困惑与压力，获得来自相似经历者的理解与建议。
+            </p>
+            <div class="hero-actions">
+                <a href="{{ url_for('create_question') }}" class="btn-primary" style="text-decoration:none; padding: 12px 28px; font-size: 14.5px;">
+                    写下一个问题
+                </a>
+                <a href="{{ url_for('experience_library') }}" class="btn-secondary" style="text-decoration:none; padding: 12px 28px; font-size: 14.5px;">
+                    浏览经验库
+                </a>
+            </div>
+        </div>
+        <div class="hero-illustration">
+            <!-- 高级感抽象插图：漂浮的信件与对话气泡 -->
+            <svg viewBox="0 0 520 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+                <!-- 背景大圆 -->
+                <circle cx="380" cy="100" r="140" fill="#F0F4F0" opacity="0.5"/>
+                <circle cx="120" cy="280" r="90" fill="#F2D0C7" opacity="0.18"/>
+                <circle cx="440" cy="260" r="70" fill="#A8C5D6" opacity="0.15"/>
+
+                <!-- 主信封 -->
+                <g class="float-anim" style="animation: float 4s ease-in-out infinite;">
+                    <rect x="260" y="60" width="160" height="110" rx="18" fill="#fff" stroke="#C8D5C8" stroke-width="1.5"/>
+                    <path d="M260 78 L340 135 L420 78" stroke="#8B9E8B" stroke-width="1.5" fill="none"/>
+                    <rect x="288" y="108" width="86" height="7" rx="3.5" fill="#C8D5C8"/>
+                    <rect x="288" y="124" width="60" height="7" rx="3.5" fill="#E0EBE0"/>
+                </g>
+
+                <!-- 大对话气泡 -->
+                <g class="float-anim" style="animation: float 5s ease-in-out infinite 0.5s;">
+                    <rect x="60" y="80" width="150" height="80" rx="18" fill="#fff" stroke="#D6E4D6" stroke-width="1.2"/>
+                    <circle cx="88" cy="114" r="5.5" fill="#8B9E8B" opacity="0.45"/>
+                    <circle cx="110" cy="114" r="5.5" fill="#8B9E8B" opacity="0.3"/>
+                    <circle cx="132" cy="114" r="5.5" fill="#8B9E8B" opacity="0.15"/>
+                    <path d="M60 148 L82 164 L104 148" fill="#fff" stroke="#D6E4D6" stroke-width="1.2" stroke-linejoin="round"/>
+                </g>
+
+                <!-- 小对话气泡 -->
+                <g class="float-anim" style="animation: float 4.5s ease-in-out infinite 1s;">
+                    <rect x="340" y="200" width="130" height="68" rx="16" fill="#F7FAF7" stroke="#D6E4D6" stroke-width="1"/>
+                    <rect x="362" y="220" width="70" height="5" rx="2.5" fill="#C8D5C8" opacity="0.7"/>
+                    <rect x="362" y="234" width="86" height="5" rx="2.5" fill="#DDE8DD" opacity="0.7"/>
+                    <path d="M364 248 L378 262 L392 248" fill="#F7FAF7" stroke="#D6E4D6" stroke-width="1" stroke-linejoin="round"/>
+                </g>
+
+                <!-- 装饰小圆点 -->
+                <circle cx="230" cy="50" r="4.5" fill="#E07A5F" opacity="0.3"/>
+                <circle cx="460" cy="170" r="3.5" fill="#8B9E8B" opacity="0.35"/>
+                <circle cx="40" cy="190" r="4" fill="#A8C5D6" opacity="0.35"/>
+                <circle cx="410" cy="310" r="3" fill="#D4A853" opacity="0.3"/>
+                <circle cx="190" cy="290" r="2.5" fill="#C8D5C8" opacity="0.5"/>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<!-- 统计概览 -->
+<section style="padding: var(--space-lg) 0; background:var(--cream);">
+    <div class="container">
+        <div class="stats-grid" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:var(--space-lg); text-align:center; max-width:1280px; margin:0 auto;">
+            <div class="card fade-in" style="padding:var(--space-lg) var(--space-md);">
+                <div style="font-size:28px; font-weight:700; color:var(--sage); letter-spacing:-0.02em;">{{ stats.questions or 0 }}</div>
+                <div style="font-size:12.5px; color:var(--ink-muted); margin-top:4px;">待回应问题</div>
+            </div>
+            <div class="card fade-in" style="padding:var(--space-lg) var(--space-md); animation-delay:0.05s;">
+                <div style="font-size:28px; font-weight:700; color:var(--coral); letter-spacing:-0.02em;">{{ stats.replies or 0 }}</div>
+                <div style="font-size:12.5px; color:var(--ink-muted); margin-top:4px;">累计回复</div>
+            </div>
+            <div class="card fade-in" style="padding:var(--space-lg) var(--space-md); animation-delay:0.1s;">
+                <div style="font-size:28px; font-weight:700; color:var(--blue-soft); letter-spacing:-0.02em;">{{ stats.experiences or 0 }}</div>
+                <div style="font-size:12.5px; color:var(--ink-muted); margin-top:4px;">经验库沉淀</div>
+            </div>
+            <div class="card fade-in" style="padding:var(--space-lg) var(--space-md); animation-delay:0.15s;">
+                <div style="font-size:28px; font-weight:700; color:var(--gold); letter-spacing:-0.02em;">{{ stats.users or 0 }}</div>
+                <div style="font-size:12.5px; color:var(--ink-muted); margin-top:4px;">同行伙伴</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 核心功能 -->
+<section class="features" style="padding: var(--space-2xl) 0;">
+  <div style="max-width:1280px; margin:0 auto;">
+    <div class="section-title" style="text-align:center; margin-bottom: var(--space-sm);">核心功能</div>
+    <p class="section-desc" style="text-align:center; margin:0 auto var(--space-xl); max-width:440px;">
+        我们为研究生群体打造了一个安全、匿名的互助空间
+    </p>
+    <div class="features-grid">
+        <div class="feature-card card fade-in">
+            <div class="feature-icon svg-icon">
+                <svg viewBox="0 0 40 40" fill="none"><rect x="4" y="8" width="32" height="24" rx="5" stroke="#8B9E8B" stroke-width="1.8" fill="#F0F4F0"/><path d="M4 13 L20 24 L36 13" stroke="#8B9E8B" stroke-width="1.5" fill="none"/></svg>
+            </div>
+            <h4>匿名提问</h4>
+            <p>安全地表达困惑与压力，无需担心被评价</p>
+        </div>
+        <div class="feature-card card fade-in" style="animation-delay:0.05s">
+            <div class="feature-icon svg-icon">
+                <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="14" stroke="#8B9E8B" stroke-width="1.8" fill="#F0F4F0" stroke-dasharray="4 3"/><circle cx="14" cy="17" r="2.5" fill="#8B9E8B" opacity="0.5"/><circle cx="20" cy="17" r="2.5" fill="#8B9E8B" opacity="0.35"/><circle cx="26" cy="17" r="2.5" fill="#8B9E8B" opacity="0.2"/><path d="M12 28 L20 22 L28 28" stroke="#C8D5C8" stroke-width="1.3" fill="none"/></svg>
+            </div>
+            <h4>人物画像推送</h4>
+            <p>根据你的经历画像，精准推送你擅长回答的问题</p>
+        </div>
+        <div class="feature-card card fade-in" style="animation-delay:0.1s">
+            <div class="feature-icon svg-icon">
+                <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="6" width="28" height="20" rx="10" stroke="#8B9E8B" stroke-width="1.8" fill="#F0F4F0"/><circle cx="14" cy="16" r="2" fill="#8B9E8B" opacity="0.4"/><circle cx="20" cy="16" r="2" fill="#8B9E8B" opacity="0.25"/><circle cx="26" cy="16" r="2" fill="#8B9E8B" opacity="0.1"/><path d="M10 30 Q20 36 30 30" stroke="#C8D5C8" stroke-width="1.3" fill="none"/></svg>
+            </div>
+            <h4>匿名回复</h4>
+            <p>收到问题后选择是否回复，默认仅提问者可见</p>
+        </div>
+        <div class="feature-card card fade-in" style="animation-delay:0.15s">
+            <div class="feature-icon svg-icon">
+                <svg viewBox="0 0 40 40" fill="none"><rect x="4" y="6" width="32" height="28" rx="5" stroke="#8B9E8B" stroke-width="1.8" fill="#F0F4F0"/><path d="M12 16 L18 22 L28 12" stroke="#8B9E8B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="10" y="26" width="20" height="2" rx="1" fill="#C8D5C8" opacity="0.5"/></svg>
+            </div>
+            <h4>经验库</h4>
+            <p>经授权公开的高质量问答，沉淀为群体的共同经验</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- 热门问题 Top 排行 + 社区动态（左右分栏） -->
+{% if top_questions %}
+<section style="padding: 0 0 var(--space-2xl);">
+    <div class="home-split">
+        <!-- 左侧：热门问题排行 -->
+        <div class="home-split-main">
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:var(--space-lg);">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 2 L15 9 L22 9 L16 14 L18 22 L12 17 L6 22 L8 14 L2 9 L9 9 Z" fill="#D4A853" stroke="#D4A853" stroke-width="0.5"/></svg>
+                <div class="section-title" style="margin:0;">热门问题排行</div>
+            </div>
+            <div>
+                {% for q in top_questions %}
+                <a href="/question/{{ q.id }}/reply" style="text-decoration:none; color:inherit; display:flex;">
+                    <div class="card fade-in" style="display:flex; align-items:center; gap:var(--space-md); padding:14px 18px; animation-delay:{{ loop.index0 * 0.05 }}s;">
+                        <span style="
+                            display:inline-flex; width:28px; height:28px; border-radius:50%;
+                            background:{{ ['var(--coral)', 'var(--coral-soft)', 'var(--gold)', 'var(--sage-pale)', '#F0F4F0'][loop.index0] }};
+                            align-items:center; justify-content:center;
+                            font-size:13px; font-weight:700; color:{{ ['#fff', '#fff', '#fff', 'var(--ink)', 'var(--ink-muted)'][loop.index0] }};
+                            flex-shrink:0;
+                        ">{{ loop.index }}</span>
+                        <div style="flex:1; min-width:0;">
+                            <div style="font-size:14px; font-weight:500; color:var(--ink); line-height:1.5; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{{ q.title }}</div>
+                            <div style="display:flex; gap:12px; font-size:12px; color:var(--ink-muted);">
+                                <span>{{ q.category }}</span>
+                                <span>{{ q.created_at.strftime('%Y-%m-%d') if q.created_at else '' }}</span>
+                            </div>
+                        </div>
+                        <span class="tag tag-sage" style="font-size:11px; flex-shrink:0;">{{ q.reply_count if q.reply_count is defined else 0 }} 条回复</span>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- 右侧：此刻的研声（社区动态侧栏） -->
+        <aside class="home-split-side">
+            <!-- 今日寄语 -->
+            <div class="side-card side-quote fade-in">
+                <div class="side-quote-mark">"</div>
+                <p class="side-quote-text" id="daily-quote">你不必独自穿越这段旅程，<br>总有人懂得你此刻的心情。</p>
+                <div class="side-quote-label">— 今日寄语</div>
+            </div>
+
+            <!-- 社区脉搏 -->
+            <div class="side-card fade-in" style="animation-delay:0.05s;">
+                <div class="side-card-title">
+                    <span class="side-live-dot"></span>此刻的研声
+                </div>
+                <div class="side-pulse">
+                    <div class="side-pulse-item">
+                        <div class="side-pulse-num" style="color:var(--coral);">{{ stats.replies or 0 }}</div>
+                        <div class="side-pulse-label">温暖回应已送达</div>
+                    </div>
+                    <div class="side-pulse-item">
+                        <div class="side-pulse-num" style="color:var(--sage);">{{ stats.users or 0 }}</div>
+                        <div class="side-pulse-label">同行者在路上</div>
+                    </div>
+                </div>
+                <div class="side-progress-wrap">
+                    <div class="side-progress-label">
+                        <span>本周回应率</span>
+                        <span id="resp-rate">86%</span>
+                    </div>
+                    <div class="side-progress-bar"><div class="side-progress-fill" style="width:86%;"></div></div>
+                </div>
+            </div>
+
+            <!-- 热门话题标签 -->
+            <div class="side-card fade-in" style="animation-delay:0.1s;">
+                <div class="side-card-title">大家都在聊</div>
+                <div class="side-tags">
+                    <a href="{{ url_for('experience_library') }}" class="side-tag">#学业压力</a>
+                    <a href="{{ url_for('experience_library') }}" class="side-tag">#导师关系</a>
+                    <a href="{{ url_for('experience_library') }}" class="side-tag">#情绪低落</a>
+                    <a href="{{ url_for('experience_library') }}" class="side-tag">#职业规划</a>
+                    <a href="{{ url_for('experience_library') }}" class="side-tag">#人际困惑</a>
+                    <a href="{{ url_for('experience_library') }}" class="side-tag">#要不要读博</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+</section>
+{% endif %}
+
+<!-- 如何使用 -->
+<section class="how-it-works" style="padding: var(--space-2xl) 0;">
+    <div style="max-width:1280px; margin:0 auto; padding:0 var(--space-xl);">
+        <div class="section-title" style="text-align:center; margin-bottom: var(--space-xl);">如何使用</div>
+        <div class="steps-grid">
+            <div class="step fade-in">
+                <div class="step-number">1</div>
+                <h4>设置画像</h4>
+                <p>选择动物头像，设置你的经历标签，保护隐私的同时帮助精准推送</p>
+            </div>
+            <div class="step fade-in" style="animation-delay:0.06s">
+                <div class="step-number">2</div>
+                <h4>提出问题</h4>
+                <p>匿名发布你的困惑，描述具体情境</p>
+            </div>
+            <div class="step fade-in" style="animation-delay:0.12s">
+                <div class="step-number">3</div>
+                <h4>等待回信</h4>
+                <p>系统根据人物画像，将问题精准投递给合适的回答者</p>
+            </div>
+            <div class="step fade-in" style="animation-delay:0.18s">
+                <div class="step-number">4</div>
+                <h4>选择公开</h4>
+                <p>若回复有价值，可匿名公开，帮助更多人</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 安全提示 -->
+<section style="padding: 0 0 var(--space-3xl);">
+    <div style="max-width:1280px; margin:0 auto; padding:0 var(--space-xl);">
+        <div class="notice-card">
+            <h4>安全提示</h4>
+            <p>如遇紧急情况或需要专业帮助，请及时联系：</p>
+            <ul>
+                <li>学校心理咨询中心</li>
+                <li>辅导员或信任的老师</li>
+                <li>专业心理援助热线</li>
+            </ul>
+            <p class="notice-note" style="margin-top:var(--space-sm); font-size:12px; color:var(--gold);">
+                本平台提供朋辈支持，不能替代专业心理服务。
+            </p>
+        </div>
+    </div>
+</section>
+{% endblock %}

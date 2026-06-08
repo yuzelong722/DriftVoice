@@ -1,0 +1,278 @@
+{% extends "base.html" %}
+
+{% block title %}待回应问题 - 研声漂流{% endblock %}
+
+{% block content %}
+<section style="padding: var(--space-2xl) 0;">
+  <div style="max-width:1100px; margin:0 auto;">
+    <!-- 页面顶部 -->
+    <div class="page-hero-row" style="display:flex; align-items:center; gap:var(--space-xl); margin-bottom:var(--space-xl);">
+        <div style="flex:0 0 auto;">
+            <svg viewBox="0 0 120 120" width="90" height="90" fill="none" style="opacity:0.85;">
+                <circle cx="60" cy="60" r="54" fill="#F0F4F0" stroke="#C8D5C8" stroke-width="1"/>
+                <rect x="32" y="30" width="56" height="40" rx="8" fill="#fff" stroke="#8B9E8B" stroke-width="1.5"/>
+                <path d="M32 40 L60 60 L88 40" stroke="#8B9E8B" stroke-width="1.3" fill="none"/>
+                <rect x="42" y="50" width="36" height="5" rx="2.5" fill="#C8D5C8" opacity="0.7"/>
+                <circle cx="28" cy="82" r="3" fill="#E07A5F" opacity="0.3"/>
+                <circle cx="94" cy="24" r="2.5" fill="#A8C5D6" opacity="0.35"/>
+            </svg>
+        </div>
+        <div>
+            <div class="section-title" style="margin-bottom:var(--space-xs);">待回应问题</div>
+            <p class="section-desc" style="margin:0;">
+                以下问题是系统为你投递的，你可以选择是否回复。<br>
+                每天接收 1–3 个问题，避免负担过重。
+            </p>
+        </div>
+    </div>
+
+    <!-- 搜索 + 筛选栏 -->
+    <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:var(--space-md); align-items:center;">
+        <div style="flex:1; min-width:200px; position:relative;">
+            <input type="text" id="search-input" class="form-input" style="width:100%; padding-right:36px;" placeholder="搜索问题标题或内容…" onkeydown="if(event.key==='Enter')doSearch()">
+            <button onclick="doSearch()" style="position:absolute; right:8px; top:50%; transform:translateY(-50%); background:none; border:none; cursor:pointer; color:var(--ink-muted); font-size:16px; line-height:1;">&#128269;</button>
+        </div>
+        <select id="filter-category" class="form-select" style="width:auto; min-width:120px;" onchange="doFilter()">
+            <option value="">全部分类</option>
+            <option value="导师与课题组">导师与课题组</option>
+            <option value="科研与论文">科研与论文</option>
+            <option value="职业规划">职业规划</option>
+            <option value="人际关系">人际关系</option>
+            <option value="情绪与压力">情绪与压力</option>
+            <option value="生活适应">生活适应</option>
+        </select>
+        <select id="filter-grade" class="form-select" style="width:auto; min-width:100px;" onchange="doFilter()">
+            <option value="">全部年级</option>
+            <option value="研一">研一</option>
+            <option value="研二">研二</option>
+            <option value="研三">研三</option>
+            <option value="博士">博士</option>
+        </select>
+        <select id="filter-major" class="form-select" style="width:auto; min-width:120px;" onchange="doFilter()">
+            <option value="">全部专业</option>
+            <option value="计算机科学">计算机科学</option>
+            <option value="电子信息">电子信息</option>
+            <option value="生物医学">生物医学</option>
+            <option value="机械工程">机械工程</option>
+            <option value="金融">金融</option>
+            <option value="建筑学">建筑学</option>
+            <option value="城乡规划">城乡规划</option>
+            <option value="风景园林">风景园林</option>
+        </select>
+        <button onclick="resetFilters()" class="btn-secondary" style="font-size:13px; padding:6px 14px; white-space:nowrap;">重置</button>
+    </div>
+
+    <!-- 排序 + 总数 -->
+    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--space-md); flex-wrap:wrap; gap:8px;">
+        <div style="font-size:13px; color:var(--ink-muted);">
+            共 <span id="total-count">…</span> 个问题待回应
+        </div>
+        <div style="display:flex; gap:6px;">
+            <button class="sort-btn active" data-sort="new" onclick="switchSort('new', this)" style="
+                padding:5px 14px; border-radius:16px; border:none;
+                font-size:12.5px; cursor:pointer; transition:all 0.2s;
+                background:var(--sage); color:#fff;
+            ">最新</button>
+            <button class="sort-btn" data-sort="hot" onclick="switchSort('hot', this)" style="
+                padding:5px 14px; border-radius:16px; border:1px solid rgba(45,52,50,0.1);
+                font-size:12.5px; cursor:pointer; transition:all 0.2s;
+                background:transparent; color:var(--ink-muted);
+            ">最热</button>
+        </div>
+    </div>
+
+    <!-- 问题列表（JS 动态渲染） -->
+    <div id="questions-list">
+        <div class="empty-state" id="loading-state">
+            <p>加载中…</p>
+        </div>
+    </div>
+
+    <!-- 加载更多 -->
+    <div style="text-align:center; margin-top:var(--space-lg);">
+        <button id="load-more-btn" class="btn-secondary" style="display:none; font-size:13px; padding:8px 24px;" onclick="loadMore()">加载更多</button>
+        <p id="no-more-msg" style="display:none; font-size:12.5px; color:var(--ink-muted);">— 已展示全部 —</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+let currentSort = 'new';
+let currentPage = 1;
+const perPage = 20;
+let isLoading = false;
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadQuestions(true);
+});
+
+function getFilterParams() {
+    const category = document.getElementById('filter-category')?.value || '';
+    const grade = document.getElementById('filter-grade')?.value || '';
+    const major = document.getElementById('filter-major')?.value || '';
+    const q = document.getElementById('search-input')?.value.trim() || '';
+    return { category, grade, major, q };
+}
+
+function doSearch() {
+    loadQuestions(true);
+}
+function doFilter() {
+    loadQuestions(true);
+}
+function resetFilters() {
+    document.getElementById('search-input').value = '';
+    document.getElementById('filter-category').value = '';
+    document.getElementById('filter-grade').value = '';
+    document.getElementById('filter-major').value = '';
+    loadQuestions(true);
+}
+
+function switchSort(sort, btn) {
+    currentSort = sort;
+    currentPage = 1;
+    document.querySelectorAll('.sort-btn').forEach(b => {
+        b.style.background = 'transparent';
+        b.style.color = 'var(--ink-muted)';
+        b.style.border = '1px solid rgba(45,52,50,0.1)';
+    });
+    btn.style.background = 'var(--sage)';
+    btn.style.color = '#fff';
+    btn.style.border = 'none';
+    loadQuestions(true);
+}
+
+async function loadQuestions(reset) {
+    if (isLoading) return;
+    isLoading = true;
+    const list = document.getElementById('questions-list');
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    const noMoreMsg = document.getElementById('no-more-msg');
+
+    if (reset) {
+        list.innerHTML = '<div class="empty-state" id="loading-state"><p>加载中…</p></div>';
+        currentPage = 1;
+    }
+
+    const params = new URLSearchParams();
+    params.append('sort', currentSort);
+    params.append('page', currentPage);
+    params.append('per_page', perPage);
+    const { category, grade, major, q } = getFilterParams();
+    if (category) params.append('category', category);
+    if (grade) params.append('grade', grade);
+    if (major) params.append('major', major);
+    if (q) params.append('q', q);
+
+    try {
+        const res  = await fetch('/api/questions/pending?' + params.toString());
+        const data = await res.json();
+        const questions = data.questions || [];
+        const hasMore = data.has_more || false;
+
+        const loadingEl = document.getElementById('loading-state');
+        if (loadingEl) loadingEl.remove();
+
+        if (reset && !questions.length) {
+            renderDemoQuestions();
+            const tc = document.getElementById('total-count');
+            if (tc) tc.textContent = '0';
+            isLoading = false;
+            return;
+        }
+
+        if (reset) {
+            list.innerHTML = '';
+        }
+        questions.forEach(function(q, i) {
+            const card = createQuestionCard(q, (currentPage - 1) * perPage + i);
+            list.insertAdjacentHTML('beforeend', card);
+        });
+
+        var tc = document.getElementById('total-count');
+        if (tc) tc.textContent = document.querySelectorAll('.question-card').length;
+        loadMoreBtn.style.display = hasMore ? 'inline-block' : 'none';
+        noMoreMsg.style.display = hasMore ? 'none' : ((reset && questions.length) ? 'block' : 'none');
+        currentPage++;
+    } catch (e) {
+        if (reset) renderDemoQuestions();
+    }
+    isLoading = false;
+}
+
+function loadMore() {
+    loadQuestions(false);
+}
+
+function createQuestionCard(q, index) {
+    const avatarHtml = getAnimalSvgSmall(q.user_avatar || 'fox');
+    const replyText = q.reply_count > 0 ? `${q.reply_count} 条回复` : '暂无回复';
+    return `
+        <div class="card question-card fade-in" style="margin-bottom:var(--space-md); animation-delay:${index * 0.03}s; cursor:pointer;" onclick="location.href='/question/${q.id}/reply'">
+            <div style="display:flex; align-items:flex-start; gap:12px;">
+                <span style="display:inline-flex; width:36px; height:36px; border-radius:50%; background:var(--sage-pale); align-items:center; justify-content:center; flex-shrink:0; overflow:hidden;">
+                    ${avatarHtml}
+                </span>
+                <div style="flex:1; min-width:0;">
+                    <div class="question-card-header" style="display:flex; align-items:center; gap:8px; margin-bottom:6px; flex-wrap:wrap;">
+                        <span class="tag tag-sage">${q.category}</span>
+                        <span style="font-size:12px; color:var(--ink-muted);">${q.created_at || ''}</span>
+                    </div>
+                    <div class="question-title" style="font-size:15px; font-weight:600; line-height:1.5; margin-bottom:6px; color:var(--ink);">${q.title}</div>
+                    <div class="question-preview" style="font-size:13.5px; color:var(--ink-light); line-height:1.6; margin-bottom:8px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;">${q.content || ''}</div>
+                    <div class="question-meta" style="display:flex; gap:var(--space-md); font-size:12.5px; color:var(--ink-muted); flex-wrap:wrap;">
+                        ${q.grade ? `<span>${q.grade}</span>` : ''}
+                        ${q.response_type ? `<span>希望${q.response_type}</span>` : ''}
+                        <span>${replyText}</span>
+                    </div>
+                </div>
+                <div onclick="event.stopPropagation();" style="flex-shrink:0;">
+                    <a href="/question/${q.id}/reply" class="btn-primary" style="text-decoration:none; font-size:12px; padding:6px 14px;">写回复</a>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function getAnimalSvgSmall(animal) {
+    const colors = {'fox':'#E07A5F','panda':'#5A6358','owl':'#8B9E8B','cat':'#D4A853','dog':'#C8D5C8','rabbit':'#F2D0C7','bear':'#A8C5D6','penguin':'#2D3432','koala':'#9CA89A','raccoon':'#D6B060','deer':'#C8A2C8','arctic_fox':'#A8D8EA'};
+    const c = colors[animal] || '#8B9E8B';
+    return `<span style="display:inline-flex;width:36px;height:36px;overflow:hidden;border-radius:50%;background:${c}20;">SVG_PLACEHOLDER</span>`;
+    // 简化：直接返回带颜色的圆圈
+    return `<span style="display:inline-block;width:28px;height:28px;border-radius:50%;background:${c}40;border:2px solid ${c}80;"></span>`;
+}
+
+// Demo 问题数据（当 API 无数据时展示）
+function renderDemoQuestions() {
+    const demos = [
+        { id: 1, title: '导师方向与我的兴趣不匹配，该怎么办？', content: '研一刚入学，发现导师的研究方向和我在本科时的兴趣不太一样。现在做实验总是提不起兴趣，也不知道该怎么和导师沟通...', category: '导师与课题组', grade: '研一', response_type: '经验建议', created_at: '2024-09-15', reply_count: 2 },
+        { id: 2, title: '论文被拒了三次，越来越没信心', content: '博士二年级，论文已经被拒了三次，每次审稿意见都很打击人。现在一看到邮件就心慌，不知道还要不要继续...', category: '科研与论文', grade: '博士', response_type: '情绪支持', created_at: '2024-10-02', reply_count: 1 },
+        { id: 3, title: '实验室氛围很压抑，每天都不想去', content: '组内师兄师姐关系很复杂，导师也很严厉。每天走进实验室都觉得喘不过气，但又不敢换组...', category: '人际关系', grade: '研二', response_type: '情绪支持', created_at: '2024-09-28', reply_count: 2 },
+        { id: 4, title: '不想读博，该怎么规划就业？', content: '研二了，发现自己对科研没什么兴趣，不想读博。但看着同门都在准备读博，自己很迷茫...', category: '职业规划', grade: '研二', response_type: '现实方法', created_at: '2024-08-20', reply_count: 1 },
+        { id: 5, title: '跨专业考研上岸，现在跟不上课业怎么办', content: '本科是机械，考研跨到了计算机。现在上课听不懂，编程基础也差，压力很大...', category: '生活适应', grade: '研一', response_type: '经验建议', created_at: '2024-10-18', reply_count: 0 },
+    ];
+    const list = document.getElementById('questions-list');
+    list.innerHTML = demos.map((q, i) => `
+        <div class="card question-card fade-in" style="animation-delay:${i * 0.06}s; cursor:pointer;" onclick="location.href='/question/${q.id}/reply'">
+            <div class="question-card-header">
+                <span class="tag tag-sage">${q.category}</span>
+                <span style="font-size:12px; color:var(--ink-muted);">${q.created_at}</span>
+            </div>
+            <div class="question-title">${q.title}</div>
+            <div class="question-preview">${q.content}</div>
+            <div class="question-meta">
+                ${q.grade ? `<span>${q.grade}</span>` : ''}
+                ${q.response_type ? `<span>希望${q.response_type}</span>` : ''}
+                <span>${q.reply_count} 条回复</span>
+            </div>
+            <div class="question-actions" onclick="event.stopPropagation();">
+                <a href="/question/${q.id}/reply" class="btn-primary" style="text-decoration:none; font-size:13px; padding:8px 18px;">写回复</a>
+            </div>
+        </div>
+    `).join('');
+    document.getElementById('total-count').textContent = demos.length;
+}
+</script>
+{% endblock %}

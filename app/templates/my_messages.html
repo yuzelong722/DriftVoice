@@ -1,0 +1,291 @@
+{% extends "base.html" %}
+
+{% block title %}我的回信 - 研声漂流{% endblock %}
+
+{% block content %}
+<section style="padding: var(--space-2xl) 0;">
+    <div style="max-width:1100px; margin:0 auto;">
+        <!-- 页面顶部 -->
+        <div class="page-hero-row" style="display:flex; align-items:center; gap:var(--space-xl); margin-bottom:var(--space-xl);">
+            <div style="flex:0 0 auto;">
+                <svg viewBox="0 0 120 120" width="90" height="90" fill="none" style="opacity:0.85;">
+                    <circle cx="60" cy="60" r="54" fill="#FDF6F0" stroke="#F2D0C7" stroke-width="1"/>
+                    <rect x="30" y="28" width="48" height="34" rx="7" fill="#fff" stroke="#E07A5F" stroke-width="1.5"/>
+                    <path d="M30 38 L54 52 L78 38" stroke="#E07A5F" stroke-width="1.3" fill="none"/>
+                    <path d="M54 74 Q54 66 60 66 Q66 66 66 74 Q66 82 60 88 Q54 82 54 74Z" fill="#F2D0C7" opacity="0.5"/>
+                    <circle cx="86" cy="34" r="3" fill="#D4A853" opacity="0.3"/>
+                    <circle cx="26" cy="72" r="2.5" fill="#A8C5D6" opacity="0.35"/>
+                </svg>
+            </div>
+            <div>
+                <div class="section-title" style="margin-bottom:var(--space-xs);">我的回信</div>
+                <p class="section-desc" style="margin:0;">查看你提出的问题、收到的回复，以及你写出的回复。</p>
+            </div>
+        </div>
+
+        <!-- 标签页 -->
+        <div class="tabs" style="margin-bottom:var(--space-lg);">
+            <button class="tab-btn active" data-tab="tab-questions">我提出的问题</button>
+            <button class="tab-btn" data-tab="tab-received">收到的回复</button>
+            <button class="tab-btn" data-tab="tab-sent">我写出的回复</button>
+        </div>
+
+        <!-- Tab: 我提出的问题 -->
+        <div class="tab-panel active" id="tab-questions">
+            {% if my_questions %}
+                {% for q in my_questions %}
+                <div class="card fade-in" style="margin-bottom:var(--space-md);">
+                    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--space-sm); flex-wrap:wrap; gap:8px;">
+                        {% if q.status == 'open' %}
+                            <span class="badge badge-open">进行中</span>
+                        {% else %}
+                            <span class="badge badge-closed">已关闭</span>
+                        {% endif %}
+                        <span style="font-size:12px; color:var(--ink-muted);">{{ q.created_at.strftime('%Y-%m-%d') if q.created_at else '' }}</span>
+                    </div>
+                    <div style="font-size:15px; font-weight:600; margin-bottom:var(--space-sm); color:var(--ink);">{{ q.title }}</div>
+                    <div style="font-size:13.5px; color:var(--ink-light); line-height:1.6; margin-bottom:var(--space-md);">
+                        {{ q.content[:120] }}{% if q.content|length > 120 %}…{% endif %}
+                    </div>
+                    <div style="display:flex; gap:var(--space-md); font-size:12.5px; color:var(--ink-muted); margin-bottom:var(--space-md); flex-wrap:wrap;">
+                        <span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="display:inline; vertical-align:-2px; margin-right:3px;"><rect x="2" y="3" width="10" height="8" rx="4" stroke="var(--ink-muted)" stroke-width="1.2" fill="none"/><path d="M2 6 L5 9 L8 6" stroke="var(--ink-muted)" stroke-width="1" fill="none"/></svg> {{ q.replies | length }} 条回复</span>
+                        <span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="display:inline; vertical-align:-2px; margin-right:3px;"><rect x="2" y="2" width="10" height="10" rx="2" stroke="var(--ink-muted)" stroke-width="1.2" fill="none"/><path d="M2 5 L12 5" stroke="var(--ink-muted)" stroke-width="1" fill="none"/></svg> {{ q.category }}</span>
+                    </div>
+                    <div style="display:flex; gap:var(--space-sm); flex-wrap:wrap;">
+                        <button class="btn-sage" onclick="viewQuestionReplies({{ q.id }})">查看回复</button>
+                        {% if q.status == 'open' %}
+                            <button class="btn-secondary" onclick="closeQuestion({{ q.id }})">关闭问题</button>
+                        {% endif %}
+                        {% if q.status == 'closed' and not q.is_public %}
+                            <button class="btn-outline" onclick="makePublic({{ q.id }})">申请公开</button>
+                        {% endif %}
+                        {% if q.is_public %}
+                            <span style="font-size:12px; color:var(--sage);"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="display:inline; vertical-align:-2px; margin-right:3px;"><path d="M2 7 L5 10 L12 3" stroke="var(--sage)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> 已公开</span>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="empty-state">
+                    <svg viewBox="0 0 80 80" width="64" height="64" fill="none" style="margin-bottom:16px; opacity:0.5;">
+                        <circle cx="40" cy="40" r="36" fill="#FDF6F0" stroke="#F2D0C7" stroke-width="1.2"/>
+                        <rect x="28" y="26" width="24" height="18" rx="4" fill="#fff" stroke="#E07A5F" stroke-width="1.2"/>
+                        <path d="M28 32 L40 40 L52 32" stroke="#E07A5F" stroke-width="1" fill="none"/>
+                        <path d="M36 54 Q36 48 40 48 Q44 48 44 54 Q44 60 40 64 Q36 60 36 54Z" fill="#F2D0C7" opacity="0.4"/>
+                    </svg>
+                    <h3>还没有提出问题</h3>
+                    <p class="section-desc">去 <a href="{{ url_for('create_question') }}" style="color:var(--sage);">写一个问题</a> 吧。</p>
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- Tab: 收到的回复 -->
+        <div class="tab-panel" id="tab-received">
+            {% if received_replies %}
+                {% for q, r in received_replies %}
+                <div class="card fade-in" style="margin-bottom:var(--space-md); border-left:3px solid var(--sage);">
+                    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--space-sm); flex-wrap:wrap; gap:8px;">
+                        {% if r.is_thanked %}
+                            <span class="badge badge-thanked">已感谢</span>
+                        {% else %}
+                            <span class="badge badge-new">新回复</span>
+                        {% endif %}
+                        <span style="font-size:12px; color:var(--ink-muted);">{{ r.created_at.strftime('%Y-%m-%d') if r.created_at else '' }}</span>
+                    </div>
+                    <div style="font-size:13.5px; color:var(--ink-light); margin-bottom:var(--space-sm);">
+                        回复了：<strong>{{ q.title }}</strong>
+                    </div>
+                    <div style="font-size:14px; line-height:1.7; color:var(--ink); white-space:pre-wrap; margin-bottom:var(--space-md);">
+                        {{ r.content[:200] }}{% if r.content|length > 200 %}…{% endif %}
+                    </div>
+                    <div style="display:flex; gap:var(--space-sm); flex-wrap:wrap;">
+                        {% if not r.is_thanked %}
+                            <button class="btn-sage" onclick="thankReply({{ r.id }})"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="display:inline; vertical-align:-2px; margin-right:4px;"><path d="M7 2 Q4 2 4 5 Q4 8 7 12 Q10 8 10 5 Q10 2 7 2Z" fill="currentColor"/></svg> 感谢对方</button>
+                        {% endif %}
+                        <button class="btn-secondary" onclick="viewQuestionReplies({{ q.id }})">查看全部</button>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="empty-state">
+                    <svg viewBox="0 0 80 80" width="64" height="64" fill="none" style="margin-bottom:16px; opacity:0.5;">
+                        <circle cx="40" cy="40" r="36" fill="#FDF6F0" stroke="#F2D0C7" stroke-width="1.2"/>
+                        <rect x="26" y="24" width="28" height="20" rx="8" stroke="#E07A5F" stroke-width="1.2" fill="none"/>
+                        <circle cx="32" cy="34" r="2" fill="#E07A5F" opacity="0.4"/>
+                        <circle cx="40" cy="34" r="2" fill="#E07A5F" opacity="0.25"/>
+                        <circle cx="48" cy="34" r="2" fill="#E07A5F" opacity="0.15"/>
+                        <path d="M32 52 L40 44 L48 52" stroke="#F2D0C7" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>还没有收到回复</h3>
+                    <p class="section-desc">去 <a href="{{ url_for('pending_questions') }}" style="color:var(--sage);">回答问题</a> 或等待他人回复你的问题。</p>
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- Tab: 我写出的回复 -->
+        <div class="tab-panel" id="tab-sent">
+            {% if my_replies %}
+                {% for r in my_replies %}
+                <div class="card fade-in" style="margin-bottom:var(--space-md);">
+                    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--space-sm); flex-wrap:wrap; gap:8px;">
+                        {% if r.is_thanked %}
+                            <span class="badge badge-thanked">已收到感谢</span>
+                        {% else %}
+                            <span style="font-size:12px; color:var(--ink-muted);">已发送</span>
+                        {% endif %}
+                        <span style="font-size:12px; color:var(--ink-muted);">{{ r.created_at.strftime('%Y-%m-%d') if r.created_at else '' }}</span>
+                    </div>
+                    <div style="font-size:13.5px; color:var(--ink-light); margin-bottom:var(--space-sm);">
+                        回复了问题 #{{ r.question_id }}
+                    </div>
+                    <div style="font-size:14px; line-height:1.7; color:var(--ink); white-space:pre-wrap;">
+                        {{ r.content[:200] }}{% if r.content|length > 200 %}…{% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="empty-state">
+                    <svg viewBox="0 0 80 80" width="64" height="64" fill="none" style="margin-bottom:16px; opacity:0.5;">
+                        <circle cx="40" cy="40" r="36" fill="#FDF6F0" stroke="#F2D0C7" stroke-width="1.2"/>
+                        <rect x="28" y="26" width="24" height="18" rx="4" fill="#fff" stroke="#E07A5F" stroke-width="1.2"/>
+                        <path d="M28 32 L40 40 L52 32" stroke="#E07A5F" stroke-width="1" fill="none"/>
+                        <circle cx="40" cy="56" r="3" fill="#F2D0C7" opacity="0.5"/>
+                    </svg>
+                    <h3>还没有回复过问题</h3>
+                    <p class="section-desc">去 <a href="{{ url_for('pending_questions') }}" style="color:var(--sage);">待回应问题</a> 看看吧。</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+<!-- 回复详情模态框 -->
+<div class="modal-overlay" id="replies-modal">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h3 id="modal-title">回复详情</h3>
+            <button class="modal-close" onclick="closeModal()">×</button>
+        </div>
+        <div class="modal-body" id="replies-container"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// 标签页切换（带平滑动画）
+document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const targetId = btn.dataset.tab;
+        const targetPanel = document.getElementById(targetId);
+        const currentPanel = document.querySelector('.tab-panel.active');
+
+        if (currentPanel === targetPanel) return;
+
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        if (currentPanel) {
+            currentPanel.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+            currentPanel.style.opacity = '0';
+            currentPanel.style.transform = 'translateY(8px)';
+            setTimeout(() => {
+                currentPanel.classList.remove('active');
+                currentPanel.style.cssText = '';
+                targetPanel.classList.add('active');
+                void targetPanel.offsetWidth;
+                targetPanel.style.opacity = '0';
+                targetPanel.style.transform = 'translateY(12px)';
+                requestAnimationFrame(() => {
+                    targetPanel.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                    targetPanel.style.opacity = '1';
+                    targetPanel.style.transform = 'translateY(0)';
+                });
+            }, 200);
+        } else {
+            targetPanel.classList.add('active');
+            targetPanel.style.opacity = '1';
+            targetPanel.style.transform = 'translateY(0)';
+        }
+    });
+});
+
+// 查看某问题的所有回复
+async function viewQuestionReplies(questionId) {
+    const modal = document.getElementById('replies-modal');
+    const container = document.getElementById('replies-container');
+    modal.classList.add('show');
+
+    try {
+        const res = await fetch(`/api/questions/${questionId}`);
+        const q   = await res.json();
+        document.getElementById('modal-title').textContent = q.title || '回复详情';
+
+        if (!q.replies || !q.replies.length) {
+            container.innerHTML = '<p style="color:var(--ink-muted);">暂无回复。</p>';
+            return;
+        }
+
+        const replyAvatar = (r) => {
+            const colors = {'fox':'#E07A5F','panda':'#5A6358','owl':'#8B9E8B','cat':'#D4A853','dog':'#C8D5C8','rabbit':'#F2D0C7','bear':'#A8C5D6','penguin':'#2D3432','koala':'#9CA89A','raccoon':'#D6B060','deer':'#C8A2C8','arctic_fox':'#A8D8EA'};
+            const c = colors[r.user_avatar] || '#8B9E8B';
+            return `<span style="display:inline-flex;width:24px;height:24px;border-radius:50%;background:${c}20;align-items:center;justify-content:center;font-size:11px;">🐾</span>`;
+        };
+
+        container.innerHTML = q.replies.map(r => `
+            <div class="reply-block">
+                <div class="reply-block-header">
+                    <span style="display:inline-flex;align-items:center;gap:6px;">
+                        ${replyAvatar(r)}
+                        <span style="font-size:12.5px;color:var(--ink-light);">${r.user_display || '匿名'}</span>
+                    </span>
+                    <span style="font-size:12px; color:var(--ink-muted);">${r.response_style || '匿名回复'}</span>
+                </div>
+                <div class="reply-text">${(r.content || '').replace(/</g, '&lt;').replace(/>/g, '&gt;')}</div>
+                <div class="reply-actions">
+                    ${!r.is_thanked ? `<button class="btn-sage" onclick="thankReply(${r.id}, this)"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="display:inline; vertical-align:-2px; margin-right:4px;"><path d="M7 2 Q4 2 4 5 Q4 8 7 12 Q10 8 10 5 Q10 2 7 2Z" fill="currentColor"/></svg> 感谢</button>` : '<span style="font-size:12.5px; color:var(--sage);"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="display:inline; vertical-align:-2px; margin-right:3px;"><path d="M7 2 Q4 2 4 5 Q4 8 7 12 Q10 8 10 5 Q10 2 7 2Z" fill="var(--sage)"/></svg> 已感谢</span>'}
+                </div>
+            </div>
+            <hr style="border:none; border-top:1px solid rgba(45,52,50,0.06); margin:var(--space-md) 0;">
+        `).join('');
+    } catch (e) {
+        container.innerHTML = '<p style="color:var(--coral);">加载失败，请重试。</p>';
+    }
+}
+
+function closeModal() {
+    document.getElementById('replies-modal').classList.remove('show');
+}
+
+// 点击遮罩关闭
+document.getElementById('replies-modal').addEventListener('click', e => {
+    if (e.target === e.currentTarget) closeModal();
+});
+
+// 感谢回复
+async function thankReply(replyId, btn) {
+    try {
+        const res = await fetch(`/api/replies/${replyId}/thank`, { method: 'POST' });
+        const data = await res.json();
+        alert(data.message);
+        closeModal();
+        location.reload();
+    } catch (e) { alert('操作失败'); }
+}
+
+// 关闭问题
+async function closeQuestion(questionId) {
+    if (!confirm('确认关闭这个问题？关闭后将不再接收新回复。')) return;
+    await fetch(`/api/questions/${questionId}/close`, { method: 'POST' });
+    location.reload();
+}
+
+// 申请公开
+async function makePublic(questionId) {
+    if (!confirm('确认要匿名公开这个内容和回复吗？\n公开前会去除可能暴露身份的信息。')) return;
+    await fetch(`/api/questions/${questionId}/make_public`, { method: 'POST' });
+    alert('已提交公开申请，审核通过后会发布到经验库。');
+    location.reload();
+}
+</script>
+{% endblock %}

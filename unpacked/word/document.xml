@@ -1,0 +1,6673 @@
+<?xml version="1.0" encoding="UTF-8"?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing">
+  
+
+  <w:body>
+    
+    
+    <w:bookmarkStart w:id="87" w:name="研究生匿名朋辈支持平台-prd-草案"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">研究生匿名朋辈支持平台</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> PRD </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">草案</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkStart w:id="20" w:name="产品名称"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">1. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">产品名称</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">暂定名称：研声漂流</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> / </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">研友回信箱</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> / GradEcho</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="20"/>
+    
+    
+    <w:bookmarkStart w:id="21" w:name="产品定位"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">2. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">产品定位</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">本产品是一款面向研究生群体的匿名朋辈支持平台。用户可以匿名发布自己在研究生阶段遇到的困惑、压力或成长问题，系统根据问题类型、用户阶段与兴趣标签，将问题投递给可能具有相关经验的其他用户。接收者可选择是否匿名回复，回复内容默认仅提问者可见。提问者在收到回复后，可选择是否将问题和回复匿名公开，形成更广泛的讨论与经验沉淀。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">产品旨在为研究生提供一个低压力、低社交负担、非评判性的表达与互助空间，补充正式心理咨询、导师沟通和现实社交之外的朋辈支持渠道。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="21"/>
+    
+    
+    <w:bookmarkStart w:id="22" w:name="产品背景"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">3. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">产品背景</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">研究生阶段普遍存在较强的不确定性和压力来源，包括导师研究方向与个人职业规划不匹配、科研进展困难、就业压力、人际关系紧张、同门比较、学生工作压力、自我价值怀疑等问题。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">现实中，许多研究生并不一定愿意直接向导师、同学、家人或心理咨询中心表达这些困扰。一方面，他们担心被评价、被误解，或影响现实关系；另一方面，很多问题又并非严重到必须立即进入专业心理干预，而是更需要来自同龄人、过来人或相似经历者的理解、经验和回应。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">线下心理活动中常见的&#x201C;匿名写下烦恼，由他人写下回应&#x201D;的形式，能够在短时间内制造一种安全、温和的互助氛围。本产品希望将这种机制线上化、持续化和结构化，让研究生可以在需要时随时表达，也可以在自己有余力时回应他人。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="22"/>
+    
+    
+    <w:bookmarkStart w:id="25" w:name="产品目标"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">4. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">产品目标</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkStart w:id="23" w:name="用户目标"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">4.1 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户目标</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1001"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">让用户能够安全、低压力地表达研究生阶段的困惑。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1001"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">让用户收到来自相似经历者的真实经验回应。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1001"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">让用户在匿名环境下获得情绪支持和现实建议。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1001"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">让用户通过帮助他人获得价值感和连接感。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1001"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">让高质量问题和回复沉淀为研究生群体的经验库。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="23"/>
+    
+    
+    <w:bookmarkStart w:id="24" w:name="产品目标-1"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">4.2 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">产品目标</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1002"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">建立一个研究生群体内部的匿名朋辈支持平台。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1002"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">通过分类投递提升问题与回复者之间的匹配度。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1002"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">通过&#x201C;默认私密、授权公开&#x201D;的机制保护提问者安全感。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1002"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">通过内容审核、风险识别和举报机制降低匿名社区风险。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1002"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">通过积分、徽章和感谢机制激励用户提供高质量回复。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="24"/>
+    
+    
+    <w:bookmarkEnd w:id="25"/>
+    
+    
+    <w:bookmarkStart w:id="32" w:name="目标用户"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">5. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">目标用户</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkStart w:id="26" w:name="核心用户"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">5.1 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">核心用户</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">在读研究生，包括研一、研二、研三、博士生。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="26"/>
+    
+    
+    <w:bookmarkStart w:id="31" w:name="典型用户画像"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">5.2 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">典型用户画像</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkStart w:id="27" w:name="用户-a研一新生"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading4"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">A：研一新生</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">刚进入研究生阶段，对导师关系、课题方向、组会压力和未来规划感到迷茫。现实中不敢直接向导师表达不适，也不好意思向同学暴露脆弱，希望匿名获得一些过来人的建议。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="27"/>
+    
+    
+    <w:bookmarkStart w:id="28" w:name="用户-b研二学生"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading4"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">B：研二学生</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">已经经历过开题、课题调整、组内关系和就业准备，对研究生生活有一定经验。希望在自己有余力时回应他人，也希望通过帮助低年级同学获得价值感。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="28"/>
+    
+    
+    <w:bookmarkStart w:id="29" w:name="用户-c就业焦虑型用户"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading4"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">C：就业焦虑型用户</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">对科研兴趣不强，更关注实习、求职和职业转型。希望找到类似经历的人，了解如何在研究生阶段规划实习、转行、考公、进企业或继续深造。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="29"/>
+    
+    
+    <w:bookmarkStart w:id="30" w:name="用户-d情绪支持型用户"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading4"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">D：情绪支持型用户</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">暂时并不需要复杂解决方案，只希望有人理解自己的压力，给予安慰、陪伴和温和建议。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="30"/>
+    
+    
+    <w:bookmarkEnd w:id="31"/>
+    
+    
+    <w:bookmarkEnd w:id="32"/>
+    
+    
+    <w:bookmarkStart w:id="33" w:name="用户痛点"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">6. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户痛点</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1003"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">研究生阶段问题具有共性，但个体常常觉得&#x201C;只有自己这样&#x201D;。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1003"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">现实关系中难以表达脆弱，尤其是导师、同门、就业和心理压力相关问题。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1003"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">正式心理咨询有门槛，很多人不一定愿意预约，也不确定自己的问题是否&#x201C;严重到需要咨询&#x201D;。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1003"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">普通社交平台过于公开，用户担心被认出、被评价或被攻击。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1003"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">纯匿名树洞缺乏有效回应，容易变成单向宣泄。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1003"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">经验分散在个人经历中，难以沉淀为对后来者有帮助的知识。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="33"/>
+    
+    
+    <w:bookmarkStart w:id="44" w:name="核心功能"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">7. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">核心功能</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkStart w:id="34" w:name="匿名提问"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">7.1 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">匿名提问</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户可以匿名发布一个问题或情绪困扰。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">发布时需要填写：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1004"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">问题标题；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1004"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">问题内容；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1004"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">问题类型；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1004"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">当前阶段，例如研一、研二、研三、博士；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1004"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">希望收到的回应类型，例如经验建议、情绪支持、现实方法、单纯倾听；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1004"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">是否允许系统推荐给更多用户；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1004"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">是否涉及紧急风险。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">问题发布后，默认不会公开进入广场，而是进入系统投递池。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="34"/>
+    
+    
+    <w:bookmarkStart w:id="35" w:name="问题分类模块"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">7.2 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">问题分类模块</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">初期可设置以下一级模块：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1005"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">导师与课题组；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1005"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">科研与论文；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1005"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">职业规划；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1005"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">就业与实习；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1005"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">人际关系；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1005"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">情绪压力；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1005"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">学生工作；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1005"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">生活适应；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1005"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">亲密关系；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1005"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">其他。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">每个一级模块下可设置二级标签。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">例如&#x201C;导师与课题组&#x201D;下包括：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1006"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">导师方向不匹配；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1006"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">沟通困难；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1006"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">被放养；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1006"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">被过度压榨；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1006"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">想换导师；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1006"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">课题组氛围。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="35"/>
+    
+    
+    <w:bookmarkStart w:id="36" w:name="问题投递"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">7.3 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">问题投递</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">系统根据用户选择的模块和标签，将问题投递给部分可能适合回答的用户。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">匹配维度包括：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1007"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户年级；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1007"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户专业大类；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1007"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户曾选择的可回答领域；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1007"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户历史高质量回复记录；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1007"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户当前可接收问题数量；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1007"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户是否愿意接收情绪类问题。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">投递方式可以是&#x201C;每日</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> 1—3 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">个待回应问题&#x201D;，避免用户负担过重。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="36"/>
+    
+    
+    <w:bookmarkStart w:id="37" w:name="匿名回复"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">7.4 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">匿名回复</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">收到问题的用户可以选择：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1008"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">回复；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1008"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">跳过；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1008"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">收藏稍后回复；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1008"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">标记不适合自己；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1008"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">举报问题。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">回复时可选择回应风格：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1009"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">我经历过类似情况；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1009"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">我提供一个现实建议；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1009"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">我只想给你一些支持；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1009"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">我建议你寻求专业帮助；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1009"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">我不能解决，但我愿意听你说。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">回复提交后，默认仅提问者可见。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="37"/>
+    
+    
+    <w:bookmarkStart w:id="38" w:name="回信收件箱"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">7.5 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">回信收件箱</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">提问者可以在收件箱查看收到的匿名回复。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">每条回复下方提供操作：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1010"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">感谢对方；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1010"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">追问一次；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1010"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">保存；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1010"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">申请公开；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1010"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">举报；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1010"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">关闭问题。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>&#x201C;追问一次&#x201D;用于防止无限聊天导致关系依赖，也可以降低骚扰风险。</w:t>
+      </w:r>
+      
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="38"/>
+    
+    
+    <w:bookmarkStart w:id="39" w:name="公开讨论机制"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">7.6 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">公开讨论机制</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">提问者收到回复后，可以选择是否公开。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">公开方式分为两种：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1011"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">公开问题和部分高质量回复；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1011"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">发起匿名讨论帖。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">公开前需要二次确认，并自动去除可能暴露身份的信息。公开后，其他用户可以评论，但评论区需要更严格的审核和举报机制。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="39"/>
+    
+    
+    <w:bookmarkStart w:id="40" w:name="经验库"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">7.7 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">经验库</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">经过提问者授权公开的问题和回复，可以沉淀为经验库。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">经验库可以按照模块分类，例如：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1012"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">导师方向不匹配怎么办；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1012"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">研一如何适应课题组；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1012"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不想读博是否正常；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1012"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">如何和导师谈职业规划；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1012"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">研究生如何准备实习；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1012"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">学生工作和科研如何平衡。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">经验库不是标准答案，而是&#x201C;真实经验合集&#x201D;。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="40"/>
+    
+    
+    <w:bookmarkStart w:id="41" w:name="感谢与激励机制"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">7.8 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">感谢与激励机制</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">为了鼓励高质量回复，可以设置非竞争型激励：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1013"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">收到感谢；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1013"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">温暖回信徽章；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1013"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">高质量回应徽章；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1013"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">本周帮助人数；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1013"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">经验贡献值。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">激励机制不应过度排名，避免让帮助行为变成功利竞争。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="41"/>
+    
+    
+    <w:bookmarkStart w:id="42" w:name="风险识别与安全提示"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">7.9 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">风险识别与安全提示</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">当用户发布内容中出现自伤、自杀、严重暴力、被侵害、严重精神危机等高风险表达时，系统应触发安全提示：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1014"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">提示用户联系学校心理中心、辅导员、可信任的人或专业机构；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1014"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">提供紧急求助入口；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1014"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">降低普通用户直接接收高危问题的概率；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1014"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">将平台定位为朋辈支持，而非专业诊疗服务。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="42"/>
+    
+    
+    <w:bookmarkStart w:id="43" w:name="内容审核与举报"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">7.10 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">内容审核与举报</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">平台需要建立基础审核机制，防止匿名环境中的风险内容。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">重点治理内容包括：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1015"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">人身攻击；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1015"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">侮辱、嘲讽、歧视；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1015"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">泄露他人隐私；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1015"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">恶意引导；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1015"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">极端消极暗示；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1015"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">伪装专业诊断；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1015"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">校园或导师的可识别实名爆料；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1015"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">广告、引流和骚扰。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="43"/>
+    
+    
+    <w:bookmarkEnd w:id="44"/>
+    
+    
+    <w:bookmarkStart w:id="48" w:name="核心用户流程"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">8. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">核心用户流程</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkStart w:id="45" w:name="提问流程"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">8.1 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">提问流程</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户进入首页</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">选择&#x201C;写下一个问题&#x201D;</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">选择问题模块</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">填写问题内容</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">选择希望收到的回应类型</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">匿名发布</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">系统投递</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">等待回信</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">查看回信</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">选择保存、感谢、追问或公开。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="45"/>
+    
+    
+    <w:bookmarkStart w:id="46" w:name="回复流程"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">8.2 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">回复流程</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户进入&#x201C;今日漂流问题&#x201D;</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">查看系统投递的问题</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">判断是否适合自己</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">选择回复或跳过</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">编辑匿名回复</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">提交</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">等待提问者反馈感谢或追问。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="46"/>
+    
+    
+    <w:bookmarkStart w:id="47" w:name="公开讨论流程"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">8.3 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">公开讨论流程</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">提问者收到回复</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">认为内容有帮助</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">点击&#x201C;匿名公开&#x201D;</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">系统提示隐私风险</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户确认</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">内容进入对应模块的公开讨论区</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">其他用户参与评论</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> → </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">管理员和系统进行审核。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="47"/>
+    
+    
+    <w:bookmarkEnd w:id="48"/>
+    
+    
+    <w:bookmarkStart w:id="52" w:name="mvp-版本设计"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">9. MVP </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">版本设计</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">第一阶段不建议直接做完整社区，而是先做一个轻量</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> MVP。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkStart w:id="49" w:name="mvp-核心功能"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">9.1 MVP </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">核心功能</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1016"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">匿名提问；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1016"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">问题分类；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1016"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">系统随机或半随机投递；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1016"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">匿名回复；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1016"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">提问者查看回复；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1016"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">感谢按钮；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1016"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">举报按钮；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1016"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">管理员后台审核。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="49"/>
+    
+    
+    <w:bookmarkStart w:id="50" w:name="mvp-暂不做的功能"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">9.2 MVP </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">暂不做的功能</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1017"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不做复杂即时聊天；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1017"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不做大规模公开广场；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1017"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不做好友关系；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1017"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不做私信；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1017"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不做精细算法推荐；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1017"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不做过度积分排行。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="50"/>
+    
+    
+    <w:bookmarkStart w:id="51" w:name="mvp-验证目标"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">9.3 MVP </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">验证目标</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1018"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户是否愿意匿名发布真实问题；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1018"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户是否愿意认真回复陌生人的问题；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1018"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">提问者是否认为回复有帮助；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1018"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">分类投递是否比随机投递更有效；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1018"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">平台是否能够控制负面内容和风险内容；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1018"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户是否愿意再次使用。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="51"/>
+    
+    
+    <w:bookmarkEnd w:id="52"/>
+    
+    
+    <w:bookmarkStart w:id="59" w:name="页面结构"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">10. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">页面结构</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkStart w:id="53" w:name="首页"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">10.1 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">首页</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">首页展示：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1019"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">写下一个问题；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1019"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">今日待回应问题；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1019"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">我的回信；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1019"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">经验库；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1019"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">安全求助入口。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">首页氛围应温和、安静、低刺激，避免强社交平台感。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="53"/>
+    
+    
+    <w:bookmarkStart w:id="54" w:name="发布问题页"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">10.2 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">发布问题页</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">字段包括：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1020"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">选择模块；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1020"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">填写标题；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1020"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">填写正文；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1020"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">选择希望收到的回应类型；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1020"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">是否允许未来匿名公开；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1020"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">发布前安全提示。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="54"/>
+    
+    
+    <w:bookmarkStart w:id="55" w:name="待回应问题页"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">10.3 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">待回应问题页</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">展示系统投递给用户的问题。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户可以点击：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1021"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">我想回复；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1021"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">暂时跳过；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1021"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不适合我；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1021"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">举报。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="55"/>
+    
+    
+    <w:bookmarkStart w:id="56" w:name="回复编辑页"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">10.4 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">回复编辑页</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">提供一些温和的写作提示，例如：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1022"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">可以先表达理解；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1022"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">可以说明自己是否有类似经历；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1022"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">可以给出具体建议；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1022"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不要替对方做绝对判断；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1022"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不要进行诊断或攻击。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="56"/>
+    
+    
+    <w:bookmarkStart w:id="57" w:name="我的回信页"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">10.5 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">我的回信页</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">分为：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1023"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">我提出的问题；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1023"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">我收到的回复；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1023"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">我写出的回复；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1023"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">我收藏的经验。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="57"/>
+    
+    
+    <w:bookmarkStart w:id="58" w:name="经验库页"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">10.6 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">经验库页</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">展示经过授权公开的高质量问答。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">分类包括：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1024"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">导师关系；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1024"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">科研压力；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1024"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">就业规划；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1024"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">人际关系；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1024"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">情绪支持；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1024"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">生活适应。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="58"/>
+    
+    
+    <w:bookmarkEnd w:id="59"/>
+    
+    
+    <w:bookmarkStart w:id="60" w:name="匹配逻辑"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">11. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">匹配逻辑</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">初期可以采用简单规则：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1025"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户发布问题时选择模块；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1025"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">系统优先投递给选择过&#x201C;愿意回答该模块&#x201D;的用户；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1025"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">同阶段问题优先投递给高年级用户；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1025"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">情绪支持类问题优先投递给高质量回复用户；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1025"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">每个问题最多先投递给</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> 5—10 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">人；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1025"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">每位用户每天最多收到</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> 1—3 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">个问题；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1025"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">若</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> 24 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">小时内无人回复，再扩大投递范围。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">后期可以根据用户反馈优化匹配：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1026"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">感谢率；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1026"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">回复被保存率；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1026"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">回复被公开率；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1026"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">举报率；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1026"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">跳过率；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1026"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">模块匹配成功率。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="60"/>
+    
+    
+    <w:bookmarkStart w:id="65" w:name="内容安全原则"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">12. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">内容安全原则</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkStart w:id="61" w:name="平台边界"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">12.1 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">平台边界</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">平台提供的是朋辈支持和经验分享，不提供专业心理诊断、治疗、法律裁判或医疗建议。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="61"/>
+    
+    
+    <w:bookmarkStart w:id="62" w:name="高风险内容处理"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">12.2 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">高风险内容处理</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">当内容涉及自伤、自杀、严重暴力、被侵害、极端精神危机等情况时，平台应明确提示用户寻求专业帮助，并提供学校心理中心、紧急联系人、当地心理援助热线等资源入口。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="62"/>
+    
+    
+    <w:bookmarkStart w:id="63" w:name="匿名保护"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">12.3 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">匿名保护</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户公开内容前，应提示其删除可能暴露身份的信息，例如导师姓名、学校具体院系、课题组名称、具体项目、真实姓名、手机号、微信号等。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="63"/>
+    
+    
+    <w:bookmarkStart w:id="64" w:name="回复规范"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">12.4 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">回复规范</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">回复者应遵守以下原则：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1027"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不攻击；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1027"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不嘲讽；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1027"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不泄露隐私；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1027"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不做诊断；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1027"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不给极端建议；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1027"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不鼓励冲动行为；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1027"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不以过来人身份压制提问者；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1027"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">不进行道德审判。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="64"/>
+    
+    
+    <w:bookmarkEnd w:id="65"/>
+    
+    
+    <w:bookmarkStart w:id="69" w:name="数据指标"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">13. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">数据指标</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkStart w:id="66" w:name="使用指标"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">13.1 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">使用指标</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1028"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">日活跃用户数；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1028"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">提问数量；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1028"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">回复数量；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1028"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">问题平均收到回复数；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1028"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">回复平均等待时间；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1028"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户次日留存；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1028"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户七日留存。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="66"/>
+    
+    
+    <w:bookmarkStart w:id="67" w:name="质量指标"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">13.2 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">质量指标</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1029"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">回复感谢率；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1029"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">回复保存率；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1029"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">回复公开率；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1029"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">回复被举报率；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1029"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">问题关闭率；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1029"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户主观帮助评分。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="67"/>
+    
+    
+    <w:bookmarkStart w:id="68" w:name="安全指标"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">13.3 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">安全指标</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1030"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">高风险内容识别数量；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1030"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">举报处理时长；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1030"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">被删除内容比例；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1030"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">重复违规用户数量；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1030"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">隐私泄露拦截数量。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="68"/>
+    
+    
+    <w:bookmarkEnd w:id="69"/>
+    
+    
+    <w:bookmarkStart w:id="70" w:name="产品差异化"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">14. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">产品差异化</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">与普通树洞相比，本产品不是单向宣泄，而是以&#x201C;收到回应&#x201D;为核心。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">与普通论坛相比，本产品不是公开讨论优先，而是默认私密、用户授权公开。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">与心理咨询平台相比，本产品不提供专业诊疗，而是提供低门槛的朋辈经验支持。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">与社交软件相比，本产品不强调建立关系，而是强调一次性的温和互助。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="70"/>
+    
+    
+    <w:bookmarkStart w:id="74" w:name="运营策略"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">15. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">运营策略</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkStart w:id="71" w:name="种子用户"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">15.1 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">种子用户</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">可以先从一个学院、一个研究生会、一个课题组联盟或一个校园社群开始。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="71"/>
+    
+    
+    <w:bookmarkStart w:id="72" w:name="初期冷启动"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">15.2 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">初期冷启动</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1031"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">邀请研二研三学生成为第一批&#x201C;回信者&#x201D;；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1031"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">收集常见研究生问题作为初始问题池；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1031"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">开展一次线下匿名回信活动，引导用户扫码体验线上平台；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1031"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">与学院心理活动、研究生会权益部门或就业服务部门结合。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="72"/>
+    
+    
+    <w:bookmarkStart w:id="73" w:name="内容运营"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">15.3 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">内容运营</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1032"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">每周整理一组匿名精选回信；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1032"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>设置专题，例如&#x201C;研一适应周&#x201D;&#x201C;导师沟通专题&#x201D;&#x201C;就业焦虑专题&#x201D;；</w:t>
+      </w:r>
+      
+      
+      
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1032"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">邀请优秀学长学姐提供非专业但真实的经验分享；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1032"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">将高质量公开内容沉淀为经验库。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="73"/>
+    
+    
+    <w:bookmarkEnd w:id="74"/>
+    
+    
+    <w:bookmarkStart w:id="75" w:name="商业与推广模式"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">16. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">商业与推广模式</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">初期更适合作为校园公益产品或研究生会服务项目，而不是商业化产品。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">可行路径包括：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1033"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">学院或学校研究生会内部试点；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1033"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">作为心理健康教育活动的线上延伸；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1033"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">作为研究生权益服务平台的一部分；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1033"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">与就业指导、心理中心、辅导员工作体系形成互补。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">商业化不宜过早进行，尤其不建议在用户脆弱情绪场景中过度广告化。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="75"/>
+    
+    
+    <w:bookmarkStart w:id="80" w:name="主要风险"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">17. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">主要风险</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkStart w:id="76" w:name="内容风险"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">17.1 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">内容风险</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">匿名环境可能出现攻击、嘲讽、隐私泄露和恶意建议。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">解决方式：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1034"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">建立审核机制；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1034"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">设置举报入口；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1034"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">对高风险内容进行识别；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1034"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">限制私信和连续追问；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1034"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">建立用户违规处罚机制。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="76"/>
+    
+    
+    <w:bookmarkStart w:id="77" w:name="专业边界风险"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">17.2 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">专业边界风险</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户可能把平台当成心理咨询或人生决策权威。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">解决方式：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1035"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">明确平台不是心理治疗；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1035"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">回复页面提示&#x201C;不做诊断、不替人决定&#x201D;；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1035"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">高风险问题提示专业求助；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1035"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">建立专业资源入口。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="77"/>
+    
+    
+    <w:bookmarkStart w:id="78" w:name="冷启动风险"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">17.3 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">冷启动风险</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">如果没有足够多的回复者，提问者体验会下降。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">解决方式：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1036"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">先小范围试点；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1036"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">先培养一批高质量回信者；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1036"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">限制每日问题数量；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1036"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">优先保证回复质量而非规模。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="78"/>
+    
+    
+    <w:bookmarkStart w:id="79" w:name="隐私风险"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">17.4 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">隐私风险</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户可能在问题中暴露导师、学校、课题组或个人身份。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">解决方式：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1037"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">发布前提醒；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1037"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">自动识别敏感信息；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1037"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">公开前二次脱敏；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1037"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户可随时删除自己的问题。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="79"/>
+    
+    
+    <w:bookmarkEnd w:id="80"/>
+    
+    
+    <w:bookmarkStart w:id="85" w:name="版本规划"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">18. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">版本规划</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkStart w:id="81" w:name="v1.0匿名回信-mvp"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">V1.0：匿名回信</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve"> MVP</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">重点验证用户是否愿意提问和回复。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">功能包括：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1038"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">匿名提问；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1038"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">分类投递；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1038"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">匿名回复；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1038"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">查看回信；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1038"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">感谢；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1038"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">举报；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1038"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">后台审核。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="81"/>
+    
+    
+    <w:bookmarkStart w:id="82" w:name="v1.5经验库版本"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">V1.5：经验库版本</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">重点沉淀高质量内容。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">新增功能包括：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1039"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">授权公开；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1039"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">精选回信；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1039"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">分类经验库；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1039"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">话题专题。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="82"/>
+    
+    
+    <w:bookmarkStart w:id="83" w:name="v2.0精准匹配版本"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">V2.0：精准匹配版本</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">重点提高匹配效率和回复质量。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">新增功能包括：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1040"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">用户可回答领域设置；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1040"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">高质量回复者标签；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1040"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">更精细的投递规则；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1040"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">个性化问题推荐。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="83"/>
+    
+    
+    <w:bookmarkStart w:id="84" w:name="v3.0校园服务协同版本"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">V3.0：校园服务协同版本</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">重点与学校心理健康、就业指导、研究生权益服务形成协同。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">新增功能包括：</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1041"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">校园资源入口；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1041"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">心理中心预约链接；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1041"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">就业经验专题；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1041"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">权益问题反馈入口；</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Compact"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1041"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">线下活动联动。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="84"/>
+    
+    
+    <w:bookmarkEnd w:id="85"/>
+    
+    
+    <w:bookmarkStart w:id="86" w:name="产品结论"/>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">19. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">产品结论</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="FirstParagraph"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">本产品具有较强的现实需求和校园场景适配性。研究生群体面临的问题具有高度共性，但表达渠道不足，现实关系中又存在较强顾虑。匿名回信机制能够降低表达门槛，朋辈支持机制能够提供真实经验和情绪陪伴，分类投递机制能够提升回应效率。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve">产品初期应避免做成泛化匿名社区，而应聚焦&#x201C;研究生问题的匿名提问与定向回信&#x201D;。只要控制好内容安全、专业边界和回复质量，该产品可以作为研究生心理健康活动、权益服务和朋辈互助体系的重要补充。</w:t>
+      </w:r>
+    </w:p>
+    
+    
+    <w:bookmarkEnd w:id="86"/>
+    
+    
+    <w:bookmarkEnd w:id="87"/>
+    
+    
+    <w:sectPr>
+      
+      
+      <w:footnotePr>
+        
+        
+                
+        
+        <w:numRestart w:val="eachSect"/>
+        
+        
+              
+      
+      </w:footnotePr>
+      
+    
+    </w:sectPr>
+    
+  
+  </w:body>
+  
+
+</w:document>

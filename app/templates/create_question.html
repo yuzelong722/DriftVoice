@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}发布问题 - 研声漂流{% endblock %}
+
+{% block content %}
+<section style="padding: var(--space-2xl) 0;">
+    <div style="max-width:640px; margin:0 auto;">
+        <div class="page-header">
+            <div class="section-title">写下一个问题</div>
+            <p class="section-desc">
+                匿名表达你的困惑与压力，无需担心被评价。<br>
+                <span style="font-size:12.5px; color:var(--coral);">⚠️ 本平台为朋辈互助，不能替代专业心理服务。</span>
+            </p>
+        </div>
+
+        <form method="POST" action="{{ url_for('create_question') }}">
+            <div class="form-group">
+                <label class="form-label" for="title">问题标题 *</label>
+                <input type="text" class="form-input" id="title" name="title" required
+                       placeholder="用一句话概括你的困惑…" maxlength="200">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="content">详细描述 *</label>
+                <textarea class="form-textarea" id="content" name="content" rows="7" required
+                          placeholder="描述你的情境、感受，以及你希望得到什么样的回应…"></textarea>
+                <p class="form-hint">真诚的描述更容易获得温暖的回复</p>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-md);">
+                <div class="form-group">
+                    <label class="form-label" for="category">问题分类 *</label>
+                    <select class="form-select" id="category" name="category" required>
+                        <option value="">请选择…</option>
+                        <option>导师与课题组</option>
+                        <option>科研与论文</option>
+                        <option>职业规划</option>
+                        <option>人际关系</option>
+                        <option>情绪与压力</option>
+                        <option>生活适应</option>
+                        <option>其他</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="grade">你的阶段</label>
+                    <select class="form-select" id="grade" name="grade">
+                        <option value="">不透露</option>
+                        <option>研一</option>
+                        <option>研二</option>
+                        <option>研三</option>
+                        <option>博士</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="response_type">希望收到什么类型的回应？</label>
+                <select class="form-select" id="response_type" name="response_type">
+                    <option value="">不限</option>
+                    <option>情绪支持</option>
+                    <option>经验建议</option>
+                    <option>现实方法</option>
+                    <option>资源推荐</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label style="display:flex; align-items:center; gap:8px; font-size:13.5px; color:var(--ink-light); cursor:pointer;">
+                    <input type="checkbox" name="allow_public" value="1"
+                           style="width:16px; height:16px; accent-color:var(--sage);">
+                    允许此问题未来匿名公开（经过审核后加入经验库）
+                </label>
+            </div>
+
+            <div style="display:flex; gap:var(--space-sm); margin-top:var(--space-xl);">
+                <button type="submit" class="btn-primary" style="padding:11px 32px;">匿名发布</button>
+                <a href="{{ url_for('index') }}" class="btn-secondary" style="padding:11px 32px; text-decoration:none;">取消</a>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
