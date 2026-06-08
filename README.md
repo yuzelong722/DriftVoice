@@ -1,6 +1,7 @@
 # 研声漂流 - 研究生匿名朋辈支持平台 MVP
 
 基于PRD文档实现的研究生匿名朋辈支持平台MVP版本。
+体验网址：https://driftvoice.onrender.com/
 
 ## 产品概述
 
